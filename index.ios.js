@@ -1,6 +1,7 @@
 'use strict';
 import React from 'react';
-import {AppRegistry, Text, View} from 'react-native';
+import {AppRegistry, View} from 'react-native';
+import LoginPage from './src/Components/LoginPage/LoginPage';
 
 class AppAS extends React.Component {
 
@@ -9,7 +10,9 @@ class AppAS extends React.Component {
   }
 
   render() {
-    return (<View></View>);
+    return (<View>
+      <LoginPage/>
+    </View>);
   }
 }
 
