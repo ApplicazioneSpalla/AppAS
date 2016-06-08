@@ -6,7 +6,9 @@ const height = Dimensions.get('window').height;
 
 const style = StyleSheet.create({
     container: {
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor:'white',
+        height:height
     },
     image: {
         width: width / 2,
@@ -27,7 +29,9 @@ const style = StyleSheet.create({
         padding: 5,
         width: width / 4,
         marginTop: height / 20,
-        alignSelf: 'center'
+        textAlign : 'center',
+        fontSize:20,
+        borderRadius: 10
     }
 });
 
