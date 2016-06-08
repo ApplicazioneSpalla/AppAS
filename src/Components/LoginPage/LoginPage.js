@@ -33,7 +33,7 @@ class LoginPage extends React.Component {
                     value={this.state.password}
                     placeholder=' password'
                     />
-                <TouchableHighlight onPress={Actions.newsPage}>
+                <TouchableHighlight onPress={Actions.navTabs}>
                     <Text style={style.button}>Login</Text>
                 </TouchableHighlight>
             </View>
