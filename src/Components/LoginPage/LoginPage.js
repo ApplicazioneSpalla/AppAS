@@ -19,7 +19,7 @@ class LoginPage extends React.Component {
             <View style={style.container}>
                 <Image
                     style={style.image}
-                    source={require('./icon.png') }
+                    source={require('../../../assets/icon.png') }
                     />
                 <TextInput
                     style={style.textInput}
@@ -33,7 +33,7 @@ class LoginPage extends React.Component {
                     value={this.state.password}
                     placeholder=' password'
                     />
-                <TouchableHighlight onPress={Actions.navTabs}>
+                <TouchableHighlight onPress={Actions.linkPage}>
                     <Text style={style.button}>Login</Text>
                 </TouchableHighlight>
             </View>

@@ -3,7 +3,7 @@ import React from 'react';
 import {AppRegistry, View} from 'react-native';
 import {Scene, Router} from 'react-native-router-flux';
 import LoginPage from './src/Components/LoginPage/LoginPage';
-import NavTabs from './src/Components/NavTabs/NavTabs';
+import LinkPage from './src/Components/LinkPage/LinkPage';
 
 class AppAS extends React.Component {
   constructor() {
@@ -14,12 +14,11 @@ class AppAS extends React.Component {
     return (<Router>
       <Scene key="root">
         <Scene key="loginPage" component={LoginPage} title="Login"/>
-        <Scene key="navTabs" component={NavTabs} title="News"/>
+        <Scene key="linkPage" component={LinkPage} title="Link Utili">
+        </Scene>
       </Scene>
     </Router>);
   }
 }
-
-
 
 AppRegistry.registerComponent('AppAS', () => AppAS);
