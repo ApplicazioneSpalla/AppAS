@@ -14,10 +14,11 @@ class NavTabs extends React.Component {
         return (
             <View style={style.container}>
                 <Tabs  style={{ backgroundColor: 'white' }}>
-                    <Icon name="ios-checkmark-circle-outline" size={30} style={{color:'black'}}/>
-                    <Text name="third">Attualità</Text>
-                    <Text name="fourth">Link</Text>
-                    <Text name="fifth">Admin</Text>
+                    <Icon name="ios-person" size={30} style={{color:'black'}}/>
+                    <Icon name="ios-paper-outline" size={30} style={{color:'black'}}/>
+                    <Icon name="ios-compass-outline" size={30} style={{color:'black'}}/>
+                    <Icon name="ios-notifications-outline" size={30} style={{color:'black'}}/>
+                    <Icon name="ios-bookmark-outline" size={30} style={{color:'black'}}/>
                 </Tabs>
                 {this.props.mainComponent}
             </View>
