@@ -8,7 +8,10 @@ const style = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
     },
-    welcome: {
+    link: {
+        flexDirection: 'row',
+    },
+    text: {
         fontSize: 20,
         textAlign: 'center',
         marginBottom: 100,
