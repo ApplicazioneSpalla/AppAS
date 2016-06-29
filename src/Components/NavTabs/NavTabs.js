@@ -20,7 +20,7 @@ class NavTabs extends React.Component {
             },
             {
                 icon: "ios-compass-outline",
-                link: Actions.loginPage
+                link: Actions.directingPage
             },
             {
                 icon: "ios-notifications-outline",
