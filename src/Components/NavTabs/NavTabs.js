@@ -40,7 +40,7 @@ class NavTabs extends React.Component {
     render() {
         return (
             <View style={style.container}>
-                <Tabs style={{ backgroundColor: 'white' }}>
+                <Tabs style={{ backgroundColor: '#387EF5' }}>
                     {
                         this.state.items.map(item => {
                             return (

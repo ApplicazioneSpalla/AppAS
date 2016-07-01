@@ -2,7 +2,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import NavTabs from '../NavTabs/NavTabs';
-
 class NewsPage extends React.Component {
 
     constructor(props) {

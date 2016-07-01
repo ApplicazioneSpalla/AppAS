@@ -12,15 +12,15 @@ class LinkPage extends React.Component {
         const links = [
             {
                 name: 'Sito Web della Scuola',
-                icon: 'ios-person'
+                icon: 'ios-globe'
             },
             {
                 name: 'Registro Elettronico',
-                icon: 'ios-person'
+                icon: 'ios-book'
             },
             {
                 name: 'Quaderno Elettronico',
-                icon: 'ios-person'
+                icon: 'ios-book-outline'
             }
         ];
         this.state = { links };
@@ -34,7 +34,7 @@ class LinkPage extends React.Component {
 
     content() {
         return (
-            <View>
+            <View style={style.container}>
                 {this.renderList() }
             </View>)
     }
@@ -44,7 +44,7 @@ class LinkPage extends React.Component {
         this.state.links.map(item => {
             values.push(
                 <View key={item.name} style={style.link}>
-                    <Icon name={item.icon} size={30} style={{ color: 'black' }}/>
+                    <Icon name={item.icon} size={30} style={style.icon}/>
                     <Text style={style.text} >{item.name}</Text>
                 </View>)
         });
