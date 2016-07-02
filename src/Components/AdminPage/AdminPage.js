@@ -11,7 +11,7 @@ class AdminPage extends React.Component {
     }
 
     render() {
-        return (<NavTabs mainComponent={this.content() } index={0}/>)
+        return (<NavTabs mainComponent={this.content() } navigator={this.props.navigator}  index={0}/>)
     }
 
     content() {

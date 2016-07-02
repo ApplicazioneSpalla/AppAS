@@ -12,23 +12,23 @@ class NavTabs extends React.Component {
         const items = [
             {
                 icon: "ios-home-outline",
-                link: this.props.navigator.push({id:'adminPage'})
+                link: 'adminPage'
             },
             {
                 icon: "ios-paper-outline",
-                link: this.props.navigator.push({id:'adminPage'})
+                link: 'articlePage'
             },
             {
                 icon: "ios-compass-outline",
-                link: this.props.navigator.push({id:'adminPage'})
+                link: 'directingPage'
             },
             {
                 icon: "ios-notifications-outline",
-                link: this.props.navigator.push({id:'adminPage'})
+                link: 'newsPage'
             },
             {
                 icon: "ios-bookmark-outline",
-                link: this.props.navigator.push({id:'adminPage'})
+                link: 'linkPage'
             },
         ];
         const activeItem = items[this.props.index].icon;
@@ -38,13 +38,14 @@ class NavTabs extends React.Component {
     }
 
     render() {
+        const self = this;
         return (
             <View style={style.container}>
                 <Tabs style={{ backgroundColor: '#387EF5' }}>
                     {
                         this.state.items.map(item => {
                             return (
-                                <TouchableHighlight  key={item.icon}  onPress={item.link}>
+                                <TouchableHighlight  key={item.icon} onPress={() => self.props.navigator.replace({ id: item.link}) }>
                                     <Icon name={item.icon} size={30} style={{ color: 'black' }}/>
                                 </TouchableHighlight>)
                         })

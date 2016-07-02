@@ -11,7 +11,7 @@ class ArticlePage extends React.Component {
     }
 
     render() {
-        return (<NavTabs mainComponent={this.content() } index={1}/>)
+        return (<NavTabs mainComponent={this.content() }  navigator={this.props.navigator} index={1}/>)
     }
 
     content() {

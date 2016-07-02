@@ -2,7 +2,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import NavTabs from '../NavTabs/NavTabs';
-import Icon from 'react-native-vector-icons/Ionicons';
+import {Container, Content, List, ListItem, Icon} from 'native-base';
 import style from './LinkPage.style';
 
 class LinkPage extends React.Component {
@@ -29,27 +29,33 @@ class LinkPage extends React.Component {
     }
 
     render() {
-        return (<NavTabs mainComponent={this.content() } index={4}/>)
+        return (<NavTabs mainComponent={this.content() }  navigator={this.props.navigator} index={4}/>)
     }
 
     content() {
         return (
-            <View style={style.container}>
-                {this.renderList() }
-            </View>)
+            <Container style={style.container}>
+                <Content>
+                    <List>
+                        {this.renderList() }
+                    </List>
+                </Content>
+            </Container>)
     }
 
     renderList() {
         let values = [];
         this.state.links.map(item => {
             values.push(
-                <View key={item.name} style={style.link}>
-                    <Icon name={item.icon} size={30} style={style.icon}/>
-                    <Text style={style.text} >{item.name}</Text>
-                </View>)
-        });
+                <ListItem iconLeft key={item.name}>
+                    <Icon name={item.icon} />
+                    <Text> {item.name}</Text>
+                </ListItem>
+            )
+        })
         return values;
-    }
+    };
+
 }
 
 

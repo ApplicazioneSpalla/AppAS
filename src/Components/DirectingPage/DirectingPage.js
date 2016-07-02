@@ -11,7 +11,7 @@ class DirectingPage extends React.Component {
     }
 
     render() {
-        return (<NavTabs mainComponent={this.content() } index={2}/>)
+        return (<NavTabs mainComponent={this.content() }  navigator={this.props.navigator} index={2}/>)
     }
 
     content() {
