@@ -34,13 +34,13 @@ class LinkPage extends React.Component {
 
     content() {
         return (
-            <Container style={style.container}>
+            <View style={style.container}>
                 <Content>
                     <List>
                         {this.renderList() }
                     </List>
                 </Content>
-            </Container>)
+            </View>)
     }
 
     renderList() {
