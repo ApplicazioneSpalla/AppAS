@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Executors/RCTJSCExecutor.m \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Executors/RCTJSCExecutor.mm \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Executors/RCTJSCExecutor.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTBridgeModule.h \

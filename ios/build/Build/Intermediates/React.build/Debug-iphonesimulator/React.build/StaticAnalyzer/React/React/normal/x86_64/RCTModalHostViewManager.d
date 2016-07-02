@@ -21,4 +21,7 @@ dependencies: \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTModalHostView.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTView.h \
-  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTTouchHandler.h
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTTouchHandler.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTShadowView.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTRootView.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTUtils.h

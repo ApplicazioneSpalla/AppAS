@@ -23,4 +23,5 @@ dependencies: \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTScrollableProtocol.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTView.h \
-  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Modules/RCTUIManager.h
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Modules/RCTUIManager.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTRootView.h

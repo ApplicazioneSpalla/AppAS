@@ -20,6 +20,7 @@ dependencies: \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTInvalidating.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Modules/RCTUIManager.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTRootView.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTWebView.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTView.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/UIView+React.h

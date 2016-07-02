@@ -21,5 +21,6 @@ dependencies: \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTPointerEvents.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTRootView.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/UIView+React.h

@@ -2,6 +2,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import NavTabs from '../NavTabs/NavTabs';
+
 class NewsPage extends React.Component {
 
     constructor(props) {
@@ -10,7 +11,7 @@ class NewsPage extends React.Component {
     }
 
     render() {
-        return (<NavTabs mainComponent={this.content() } index={3}/>)
+        return (<NavTabs mainComponent={this.content() } navigator={this.props.navigator} index={3}/>)
     }
 
     content() {

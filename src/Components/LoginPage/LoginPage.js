@@ -1,7 +1,6 @@
 'use strict';
 import React from 'react';
-import {View, Image, TextInput, TouchableHighlight, Text} from 'react-native';
-import {Actions} from 'react-native-router-flux';
+import {View, Image, TextInput, TouchableHighlight, Text, Navigator} from 'react-native';
 import style from './LoginPage.style';
 
 class LoginPage extends React.Component {
@@ -12,6 +11,8 @@ class LoginPage extends React.Component {
             username: '',
             password: ''
         }
+
+        this.login = this.login.bind(this);
     }
 
     render() {
@@ -33,11 +34,15 @@ class LoginPage extends React.Component {
                     value={this.state.password}
                     placeholder=' password'
                     />
-                <TouchableHighlight onPress={Actions.linkPage}>
+                <TouchableHighlight onPress={this.login}>
                     <Text style={style.button}>Login</Text>
                 </TouchableHighlight>
-            </View>
+            </View >
         )
+    }
+
+    login() {
+        this.props.navigator.push({ id: 'newsPage' })
     }
 }
 

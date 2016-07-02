@@ -24,4 +24,5 @@ dependencies: \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Profiler/RCTProfile.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Modules/RCTSourceCode.h \
-  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTUtils.h
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Modules/RCTRedBox.h

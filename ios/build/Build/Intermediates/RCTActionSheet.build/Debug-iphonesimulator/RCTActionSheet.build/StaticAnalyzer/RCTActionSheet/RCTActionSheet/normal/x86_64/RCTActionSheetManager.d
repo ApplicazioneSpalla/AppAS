@@ -11,4 +11,5 @@ dependencies: \
   ../../React/Base/RCTLog.h ../../React/Base/RCTAssert.h \
   ../../React/Views/RCTPointerEvents.h ../../React/Base/RCTUtils.h \
   ../../React/Modules/RCTUIManager.h ../../React/Views/RCTViewManager.h \
-  ../../React/Views/RCTComponent.h ../../React/Base/RCTEventDispatcher.h
+  ../../React/Views/RCTComponent.h ../../React/Base/RCTEventDispatcher.h \
+  ../../React/Base/RCTRootView.h

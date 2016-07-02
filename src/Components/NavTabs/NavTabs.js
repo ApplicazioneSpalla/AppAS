@@ -1,9 +1,9 @@
 'use strict';
 import React from 'react';
 import {View, Text, TouchableHighlight} from 'react-native';
-import {Actions} from 'react-native-router-flux';
 import Tabs from 'react-native-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Navigation from '../Navigation/Navigation';
 import style from './NavTabs.style';
 
 class NavTabs extends React.Component {
@@ -12,23 +12,23 @@ class NavTabs extends React.Component {
         const items = [
             {
                 icon: "ios-home-outline",
-                link: Actions.adminPage
+                link: this.props.navigator.push({id:'adminPage'})
             },
             {
                 icon: "ios-paper-outline",
-                link: Actions.articlePage
+                link: this.props.navigator.push({id:'adminPage'})
             },
             {
                 icon: "ios-compass-outline",
-                link: Actions.directingPage
+                link: this.props.navigator.push({id:'adminPage'})
             },
             {
                 icon: "ios-notifications-outline",
-                link: Actions.newsPage
+                link: this.props.navigator.push({id:'adminPage'})
             },
             {
                 icon: "ios-bookmark-outline",
-                link: Actions.linkPage
+                link: this.props.navigator.push({id:'adminPage'})
             },
         ];
         const activeItem = items[this.props.index].icon;
@@ -44,7 +44,7 @@ class NavTabs extends React.Component {
                     {
                         this.state.items.map(item => {
                             return (
-                                <TouchableHighlight  key={item.icon} onPress={item.link}>
+                                <TouchableHighlight  key={item.icon}  onPress={item.link}>
                                     <Icon name={item.icon} size={30} style={{ color: 'black' }}/>
                                 </TouchableHighlight>)
                         })

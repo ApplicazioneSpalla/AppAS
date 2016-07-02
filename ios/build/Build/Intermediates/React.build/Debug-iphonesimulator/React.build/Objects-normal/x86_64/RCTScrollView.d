@@ -24,6 +24,7 @@ dependencies: \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTRefreshControl.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Modules/RCTUIManager.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTViewManager.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTRootView.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/UIView+Private.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/UIView+React.h

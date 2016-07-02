@@ -24,4 +24,5 @@ dependencies: \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTModuleData.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Modules/RCTUIManager.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTRootView.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Executors/RCTJSCExecutor.h

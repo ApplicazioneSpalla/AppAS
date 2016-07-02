@@ -12,5 +12,7 @@ dependencies: \
   ../../React/Base/RCTBridgeModule.h ../../React/Base/RCTFrameUpdate.h \
   ../../React/Base/RCTInvalidating.h \
   ../../React/Base/RCTJavaScriptExecutor.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/Libraries/Text/RCTShadowText.h \
+  ../../React/Views/RCTShadowView.h ../../React/Base/RCTRootView.h \
   /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/Libraries/Text/RCTText.h \
   ../../React/Base/RCTUtils.h
