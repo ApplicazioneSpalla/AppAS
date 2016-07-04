@@ -2,6 +2,8 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import NavTabs from '../NavTabs/NavTabs';
+import ArticleCard from './ArticleCard';
+import style from './ArticlePage.style';
 
 class ArticlePage extends React.Component {
 
@@ -16,8 +18,8 @@ class ArticlePage extends React.Component {
 
     content() {
         return (
-            <View>
-                <Text>ArticlePage</Text>
+            <View style={style.container} >
+                <ArticleCard/>
             </View>)
     }
 

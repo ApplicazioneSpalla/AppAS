@@ -2,7 +2,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import NavTabs from '../NavTabs/NavTabs';
-import {Container, Content, List, ListItem, Icon} from 'native-base';
+import {Content, List, ListItem, Icon} from 'native-base';
 import style from './LinkPage.style';
 
 class LinkPage extends React.Component {

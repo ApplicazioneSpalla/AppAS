@@ -1,7 +1,10 @@
 'use strict';
 import React from 'react';
 import {View, Text} from 'react-native';
+import {Content, Card, CardItem} from 'native-base';
 import NavTabs from '../NavTabs/NavTabs';
+import NewsCard from './NewsCard';
+import style from './NewsPage.style';
 
 class NewsPage extends React.Component {
 
@@ -17,7 +20,7 @@ class NewsPage extends React.Component {
     content() {
         return (
             <View>
-                <Text>NewsPage</Text>
+                <NewsCard/>
             </View>)
     }
 

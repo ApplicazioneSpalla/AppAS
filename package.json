@@ -18,6 +18,8 @@
     "react-native-vector-icons": "^2.0.3"
   },
   "devDependencies": {
-    "eslint": "^3.0.0"
+    "chai": "^3.5.0",
+    "eslint": "^3.0.0",
+    "mocha": "^2.5.3"
   }
 }
