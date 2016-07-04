@@ -20,7 +20,11 @@ class LinkPage extends React.Component {
             },
             {
                 name: 'Quaderno Elettronico',
-                icon: 'ios-book-outline'
+                icon: 'md-bookmarks'
+            },
+            {
+                name: 'Web Mail',
+                icon: 'ios-mail'
             }
         ];
         this.state = { links };

@@ -17,6 +17,13 @@ const style = StyleSheet.create({
         fontSize: width / 30,
         marginBottom: height / 80
     },
+    dataText : {
+        color: 'grey',
+        marginTop: height / 150,
+        marginBottom: height / 150,
+        marginRight: width / 70,
+        fontSize: width / 28,
+    },
     footer: {
         flexDirection: 'row'
     },

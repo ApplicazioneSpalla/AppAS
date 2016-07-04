@@ -20,6 +20,10 @@ class NewsCard extends React.Component {
                         <Text>
                             NativeBase is made from effective building blocks referred to as components.The Components are constructed in pure React Native platform along with some JavaScript functionality with rich set of customisable properties
                         </Text>
+                        <View style={style.footer}>
+                            <Text style={style.dataText}>10 Mi piace</Text>
+                            <Text style={style.dataText}>20 Commenti</Text>
+                        </View>
                     </CardItem>
 
                     <CardItem style={style.footer}>
