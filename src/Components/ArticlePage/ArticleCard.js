@@ -1,27 +1,29 @@
 import React from 'react';
-import {Image} from 'react-native';
+import {Image,ScrollView} from 'react-native';
 import {Container, Content, Card, CardItem, Text, Icon } from 'native-base';
+import style from './ArticlePage.style';
 
 class ArticleCard extends React.Component {
     render() {
         return (
             <Container>
                 <Content>
+
                     <Card>
                         <CardItem>
-                            <Text>Instrumental Songs</Text>
-                            <Text note>Guitar</Text>
+                            <Text>Festa d'Istututo</Text>
                         </CardItem>
 
                         <CardItem>
-                            <Image source={require('../../../assets/icon.png') } />
+                            <Image style={style.image} source={require('../../../assets/icon.png') } />
                         </CardItem>
 
                         <CardItem>
-                            <Icon name={'ios-musical-notes'} style={{ color: '#ED4A6A' }} />
-                            <Text>Read now</Text>
+                            <Icon name={'md-book'} style={{ color: '#ED4A6A' }} />
+                            <Text>Leggi l'Articolo</Text>
                         </CardItem>
                     </Card>
+            
                 </Content>
             </Container>
         );

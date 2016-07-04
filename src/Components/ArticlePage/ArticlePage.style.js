@@ -7,6 +7,10 @@ const height = Dimensions.get('window').height;
 const style = StyleSheet.create({
     container: {
         marginTop: height / 30
+    },
+    image: {
+        width : width,
+        height : height/3
     }
 });
 

@@ -3,6 +3,7 @@ import React from 'react';
 import {View, Text, TouchableHighlight} from 'react-native';
 import Tabs from 'react-native-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
+import {Header, Title} from 'native-base';
 import Navigation from '../Navigation/Navigation';
 import style from './NavTabs.style';
 
@@ -33,7 +34,10 @@ class NavTabs extends React.Component {
         ];
         const activeItem = items[this.props.index].icon;
         items[this.props.index].icon = activeItem.slice(0, activeItem.length - 8);
-        this.state = { items };
+        this.state = { 
+            items,
+            title : this.getTitle()
+         };
 
     }
 
@@ -41,7 +45,7 @@ class NavTabs extends React.Component {
         const self = this;
         return (
             <View style={style.container}>
-                <Tabs style={{ backgroundColor: '#387EF5' }}>
+                <Tabs style={style.navbar}>
                     {
                         this.state.items.map(item => {
                             return (
@@ -51,9 +55,27 @@ class NavTabs extends React.Component {
                         })
                     }
                 </Tabs>
+                <Header style={style.header}>
+                    <Text style={style.title}>{this.state.title}</Text>
+                </Header>
                 {this.props.mainComponent}
             </View>
         );
+    }
+
+    getTitle(){
+        switch(this.props.index){
+            case 0:
+            return 'Sezione Admin'
+            case 1:
+            return "Attualità"
+            case 2:
+            return 'Giornalino'
+            case 3:
+            return "Comunicazioni"
+            case 4:
+            return "Link Utili"
+        }
     }
 }
 
