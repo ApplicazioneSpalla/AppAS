@@ -2,6 +2,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import NavTabs from '../NavTabs/NavTabs';
+import style from './DirectingPage.style';
 
 class DirectingPage extends React.Component {
 
@@ -17,7 +18,9 @@ class DirectingPage extends React.Component {
     content() {
         return (
             <View>
-                <Text>DirectingPage</Text>
+                <View style={style.container}>
+                    <Text>DirectingPage</Text>
+                </View>
             </View>)
     }
 
