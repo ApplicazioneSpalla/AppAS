@@ -1,6 +1,6 @@
 import React from 'react';
-import {View,Image,ScrollView} from 'react-native';
-import {Container, Content, Card, CardItem, Text, Icon } from 'native-base';
+import {View,Image,ScrollView,TouchableHighlight} from 'react-native';
+import {Container, Content, Card, CardItem, Text, Icon, Button} from 'native-base';
 import style from './ArticlePage.style';
 
 class ArticleCard extends React.Component {
@@ -21,12 +21,15 @@ class ArticleCard extends React.Component {
                         <CardItem>
                             <Text style={style.title} >#CatchTheCode</Text>
                             <Text numberOfLines={3}>#CatchTheCode è l'attività proposta dagli studenti del nostro liceo alle classi delle scuole primarie e secondarie in occasione della EuCodeWeek, iniziativa della Commissione Europea a sostegno della programmazione.</Text>
+                            <View style={style.dataRow}>
+                                <Text style={style.dateText}>10 minuti</Text>
+                            </View>
                         </CardItem>
 
                         <CardItem style={style.footer}>
                             <View style={style.button}>
-                                <Icon name="md-book" style={style.footerIcon}/>
-                                <Text style={style.iconText}>Leggi</Text>
+                                <Icon name="md-book" style={style.footerIcon} onPress={() => this.props.navigator.replace({ id : 'readArticle'}) }/>
+                                <Text style={style.iconText} onPress={() => this.props.navigator.replace({ id : 'readArticle'}) }>Leggi</Text>
                             </View>
                             <View style={style.button}>
                                 <Icon name="md-thumbs-up" style={style.footerIcon}/>

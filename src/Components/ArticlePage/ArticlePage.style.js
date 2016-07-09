@@ -12,15 +12,21 @@ const style = StyleSheet.create({
         width: width,
         height: height / 3
     },
+    title : {
+        fontWeight : 'bold',
+        fontSize : height / 35
+    },
+    dataRow: {
+        flexDirection : 'row'
+    },
+    dateText : {
+        color: 'grey'
+    },
     footer: {
         height: height / 14,
         flex : 1,
         justifyContent : 'center',
         flexDirection : 'row'
-    },
-    title : {
-        fontWeight : 'bold',
-        fontSize : height / 35
     },
     button: {
         width: width / 3,
@@ -37,7 +43,6 @@ const style = StyleSheet.create({
         fontSize: height / 50,
         marginLeft: width / 80.
     }
-
 });
 
 export default style;

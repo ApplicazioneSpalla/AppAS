@@ -19,7 +19,7 @@ class ArticlePage extends React.Component {
     content() {
         return (
             <View style={style.container} >
-                <ArticleCard/>
+                <ArticleCard navigator={this.props.navigator}/>
             </View>)
     }
 
