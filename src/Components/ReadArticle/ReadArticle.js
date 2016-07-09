@@ -19,7 +19,6 @@ class ReadArticle extends React.Component {
         return (
             <View>
                 <Content>
-
                     <Card>
                         <CardItem>
                             <Text style={style.title} >#CatchTheCode</Text>
