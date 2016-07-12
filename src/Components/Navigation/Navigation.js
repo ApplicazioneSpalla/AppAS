@@ -8,6 +8,7 @@ import DirectingPage from '../DirectingPage/DirectingPage';
 import NewsPage from '../NewsPage/NewsPage';
 import LinkPage from '../LinkPage/LinkPage';
 import ReadArticle from '../ReadArticle/ReadArticle';
+import CommentsPage from '../CommentsPage/CommentsPage';
 
 class Navigation extends React.Component {
 
@@ -40,6 +41,8 @@ class Navigation extends React.Component {
                 return (<LinkPage navigator={navigator} title="linkPage"/>);
             case 'readArticle':
                 return (<ReadArticle navigator={navigator} title="readArticle"/>);
+            case 'commentsPage':
+                return (<CommentsPage navigator={navigator} title="commentsPage"/>);
         }
     }
 }
