@@ -2,6 +2,7 @@ import React from 'react';
 import {Navigator} from 'react-native';
 
 import LoginPage from '../LoginPage/LoginPage';
+import SignupPage from '../SignupPage/SignupPage';
 import AdminPage from '../AdminPage/AdminPage';
 import ArticlePage from '../ArticlePage/ArticlePage';
 import DirectingPage from '../DirectingPage/DirectingPage';
@@ -29,6 +30,8 @@ class Navigation extends React.Component {
         switch (route.id) {
             case 'loginPage':
                 return (<LoginPage navigator={navigator} title="loginPage"/>);
+            case 'signupPage':
+                return (<SignupPage navigator={navigator} title="signupPage"/>);
             case 'adminPage':
                 return (<AdminPage navigator={navigator} title="adminPage"/>);
             case 'articlePage':

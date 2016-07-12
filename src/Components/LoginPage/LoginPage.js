@@ -34,16 +34,17 @@ class LoginPage extends React.Component {
                     value={this.state.password}
                     placeholder=' password'
                     />
-                <TouchableHighlight onPress={this.login}>
-                    <Text style={style.button}>Login</Text>
-                </TouchableHighlight>
-            </View >
+                <Text style={style.button} onPress={this.login}>Login</Text>
+                <Text style={style.linkText} onPress={() => this.props.navigator.push({ id: 'signupPage' }) }>Non hai un account?Iscriviti!</Text>
+            </View>
         )
     }
 
     login() {
-        this.props.navigator.push({ id: 'newsPage' })
+        this.props.navigator.push({ id: 'newsPage' });
     }
+
+
 }
 
 export default LoginPage;

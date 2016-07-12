@@ -23,7 +23,7 @@ class CommentsPage extends React.Component {
                     <View style={style.commentContainer}>
                         <View style={style.row}>
                             <Text style={style.author}>Nathaniel Clyne</Text>
-                            <Text>f i got locked away and we lost it all today tell me honestly would you still love me the same</Text>
+                            <Text>If i got locked away and we lost it all today tell me honestly would you still love me the same</Text>
                         </View>
                         <Text style={style.date}>20 Settembre alle 10: 55</Text>
                     </View>
