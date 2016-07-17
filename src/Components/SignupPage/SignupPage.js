@@ -42,12 +42,14 @@ class SignupPage extends React.Component {
                     onChangeText={(password) => this.setState({ password }) }
                     value={this.state.password}
                     placeholder=' password'
+                    secureTextEntry={true}
                     />
                 <TextInput
                     style={style.textInput}
                     onChangeText={(confirmPassword) => this.setState({ confirmPassword }) }
                     value={this.state.confirmPassword}
                     placeholder='conferma password'
+                    secureTextEntry={true}
                     />
                 <Button style={style.button} onPress={this.signup}>Iscriviti</Button>
             </View >

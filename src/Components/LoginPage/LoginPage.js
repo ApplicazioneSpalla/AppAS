@@ -34,6 +34,7 @@ class LoginPage extends React.Component {
                     onChangeText={(password) => this.setState({ password }) }
                     value={this.state.password}
                     placeholder=' password'
+                    secureTextEntry={true}
                     />
                 <Button style={style.button} onPress={this.login}>Accedi</Button>
                 <Text style={style.linkText} onPress={() => this.props.navigator.push({ id: 'signupPage' }) }>Non hai un account?Iscriviti!</Text>

@@ -3,7 +3,7 @@ import React from 'react';
 import {View, Text, TouchableHighlight} from 'react-native';
 import Tabs from 'react-native-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {Header, Title} from 'native-base';
+import {Header, Title, Button} from 'native-base';
 import Navigation from '../Navigation/Navigation';
 import style from './NavTabs.style';
 
@@ -34,10 +34,10 @@ class NavTabs extends React.Component {
         ];
         const activeItem = items[this.props.index].icon;
         items[this.props.index].icon = activeItem.slice(0, activeItem.length - 8);
-        this.state = { 
+        this.state = {
             items,
-            title : this.getTitle()
-         };
+            title: this.getTitle()
+        };
 
     }
 
@@ -49,7 +49,7 @@ class NavTabs extends React.Component {
                     {
                         this.state.items.map(item => {
                             return (
-                                <TouchableHighlight  key={item.icon} onPress={() => self.props.navigator.replace({ id: item.link}) }>
+                                <TouchableHighlight  key={item.icon} onPress={() => self.props.navigator.replace({ id: item.link }) }>
                                     <Icon name={item.icon} size={30} style={{ color: 'black' }}/>
                                 </TouchableHighlight>)
                         })
@@ -57,24 +57,25 @@ class NavTabs extends React.Component {
                 </Tabs>
                 <Header style={style.header}>
                     <Text style={style.title}>{this.state.title}</Text>
+                
                 </Header>
                 {this.props.mainComponent}
             </View>
         );
     }
 
-    getTitle(){
-        switch(this.props.index){
+    getTitle() {
+        switch (this.props.index) {
             case 0:
-            return 'Sezione Admin'
+                return 'Sezione Admin'
             case 1:
-            return "Attualità"
+                return "Attualità"
             case 2:
-            return 'Giornalino'
+                return 'Giornalino'
             case 3:
-            return "Comunicazioni"
+                return "Comunicazioni"
             case 4:
-            return "Link Utili"
+                return "Link Utili"
         }
     }
 }

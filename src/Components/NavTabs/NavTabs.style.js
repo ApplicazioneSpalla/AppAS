@@ -7,7 +7,7 @@ const mainColor = '#4CAF50';
 
 
 const style = StyleSheet.create({
-    
+
     container: {
         flex: 1,
         backgroundColor: '#F5FCFF',
@@ -21,18 +21,18 @@ const style = StyleSheet.create({
         width: width / 12,
         height: height / 22
     },
-    navbar : {
-        backgroundColor : mainColor
+    navbar: {
+        backgroundColor: mainColor,
+        height: height / 13
     },
-    header : {
-        backgroundColor : mainColor,
-        marginTop : height/30,
-        height: height / 15
+    header: {
+        backgroundColor: mainColor,
+        height: height / 12
     },
-    title : {
-        color : 'white',
-        marginBottom : height / 70,
-        fontSize : height/40
+    title: {
+        color: 'white',
+        marginTop: height / 150,
+        fontSize: height / 40
     }
 });
 

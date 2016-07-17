@@ -1,6 +1,6 @@
 'use strict';
 import React from 'react';
-import {View, TextInput, Text} from 'react-native';
+import {View, TextInput, Text, CameraRoll} from 'react-native';
 import {Button, Icon} from 'native-base';
 import NavTabs from '../NavTabs/NavTabs';
 import style from './CreateArticlePage.style';
@@ -36,10 +36,10 @@ class CreateArticlePage extends React.Component {
                     placeholder="Testo dell' articolo"
                     multiline={true}
                     />
-                 <View style={style.iconContainer}>
+                <View style={style.iconContainer}>
                     <Icon name="ios-camera"/>
                     <Text style={style.iconText}>Carica Immagine</Text>
-                 </View>
+                </View>
                 <Button style={style.button}>Invia</Button>
             </View>
         )

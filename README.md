@@ -1,3 +1,3 @@
 #App Ariosto Spallanzani
 
-client dell'applicazione del Liceo Ariosto Spallanzani di Reggio Emilia
+Client dell'applicazione del Liceo Ariosto Spallanzani di Reggio Emilia
