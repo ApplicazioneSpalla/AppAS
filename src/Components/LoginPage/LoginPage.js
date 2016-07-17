@@ -1,6 +1,7 @@
 'use strict';
 import React from 'react';
 import {View, Image, TextInput, TouchableHighlight, Text, Navigator} from 'react-native';
+import {Button} from 'native-base';
 import style from './LoginPage.style';
 
 class LoginPage extends React.Component {
@@ -34,7 +35,7 @@ class LoginPage extends React.Component {
                     value={this.state.password}
                     placeholder=' password'
                     />
-                <Text style={style.button} onPress={this.login}>Login</Text>
+                <Button style={style.button} onPress={this.login}>Accedi</Button>
                 <Text style={style.linkText} onPress={() => this.props.navigator.push({ id: 'signupPage' }) }>Non hai un account?Iscriviti!</Text>
             </View>
         )

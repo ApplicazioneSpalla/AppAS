@@ -1,6 +1,7 @@
 'use strict';
 import React from 'react';
-import {View, Image, TextInput, TouchableHighlight, Text, Navigator} from 'react-native';
+import {View, Image, TextInput, Navigator} from 'react-native';
+import {Button} from 'native-base';
 import style from './SignupPage.style';
 
 class SignupPage extends React.Component {
@@ -48,9 +49,7 @@ class SignupPage extends React.Component {
                     value={this.state.confirmPassword}
                     placeholder='conferma password'
                     />
-                <TouchableHighlight onPress={this.signup}>
-                    <Text style={style.button}>Iscriviti</Text>
-                </TouchableHighlight>
+                <Button style={style.button} onPress={this.signup}>Iscriviti</Button>
             </View >
         )
     }

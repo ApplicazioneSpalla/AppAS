@@ -21,7 +21,7 @@ class ReadArticle extends React.Component {
                 <Content>
                     <Card>
                         <CardItem>
-                            <Text style={style.title} >#CatchTheCode</Text>
+                            <Text style={style.title}>#CatchTheCode</Text>
                         </CardItem>
 
                         <CardItem>
@@ -30,6 +30,7 @@ class ReadArticle extends React.Component {
 
                         <CardItem>
                             <Text>#CatchTheCode è l'attività proposta dagli studenti del nostro liceo alle classi delle scuole primarie e secondarie in occasione della EuCodeWeek, iniziativa della Commissione Europea a sostegno della programmazione.</Text>
+                            <Text style={style.linkText}>Leggi i Commenti</Text>
                         </CardItem>
                     </Card>
                 </Content>

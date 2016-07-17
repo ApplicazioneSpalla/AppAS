@@ -1,6 +1,6 @@
 'use strict';
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, ScrollView, Text} from 'react-native';
 import {Content, Card, CardItem} from 'native-base';
 import NavTabs from '../NavTabs/NavTabs';
 import NewsCard from './NewsCard';
@@ -19,7 +19,7 @@ class NewsPage extends React.Component {
 
     content() {
         return (
-            <View>
+            <View style={style.scrollView}>
                 <NewsCard navigator={this.props.navigator}/>
             </View>)
     }

@@ -14,7 +14,7 @@ const style = StyleSheet.create({
     },
     author: {
         fontWeight: 'bold',
-        marginBottom: height / 160
+        marginBottom: height / 300
     },
     date: {
         color: 'grey',

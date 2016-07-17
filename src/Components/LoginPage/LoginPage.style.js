@@ -24,14 +24,9 @@ const style = StyleSheet.create({
         marginLeft: width / 4
     },
     button: {
-        backgroundColor: '#6666ff',
-        color: 'white',
-        padding: 5,
-        width: width / 4,
         marginTop: height / 25,
-        textAlign: 'center',
-        fontSize: 20,
-        borderRadius: 10
+        width: width / 4,
+        marginLeft: width / 2 - width / 8
     },
     linkText: {
         color: 'blue',

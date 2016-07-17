@@ -5,8 +5,14 @@ const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 
 const style = StyleSheet.create({
+    scrollView: {
+        height: height / 10 * 8
+    },
     container: {
         marginTop: height / 25
+    },
+    card: {
+        marginBottom: height / 30
     },
     author: {
         fontWeight: 'bold',
@@ -17,7 +23,7 @@ const style = StyleSheet.create({
         fontSize: width / 30,
         marginBottom: height / 80
     },
-    dataText : {
+    dataText: {
         color: 'grey',
         marginTop: height / 150,
         marginBottom: height / 150,

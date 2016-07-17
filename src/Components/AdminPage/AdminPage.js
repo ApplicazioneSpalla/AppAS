@@ -12,15 +12,18 @@ class AdminPage extends React.Component {
         const links = [
             {
                 name: 'Scrivi Comunicazione',
-                icon: 'ios-paper'
+                icon: 'ios-paper',
+                onPress: () => this.props.navigator.replace({ id: 'createNewsPage' }) 
             },
             {
                 name: 'Scrivi Articolo Di Attualità',
-                icon: 'ios-compass'
+                icon: 'ios-compass',
+                onPress: () => this.props.navigator.replace({ id: 'createArticlePage' }) 
             },
             {
                 name: 'Scrivi Articolo di Orientamento',
-                icon: 'ios-notifications'
+                icon: 'ios-notifications',
+                onPress: () => this.props.navigator.replace({ id: 'createArticlePage' }) 
             }
         ];
         this.state = { links };
@@ -47,7 +50,7 @@ class AdminPage extends React.Component {
         let values = [];
         this.state.links.map(item => {
             values.push(
-                <ListItem iconLeft key={item.name}>
+                <ListItem iconLeft key={item.name} onPress={item.onPress}>
                     <Icon name={item.icon} />
                     <Text> {item.name}</Text>
                 </ListItem>

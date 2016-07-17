@@ -7,31 +7,20 @@ const height = Dimensions.get('window').height;
 const style = StyleSheet.create({
     container: {
         alignItems: 'center',
-        backgroundColor: 'white',
-        height: height
-    },
-    image: {
-        width: width / 2,
-        height: height / 4,
-        marginTop: height / 12
+        backgroundColor: 'white'
     },
     textInput: {
-        width: width / 2,
-        height: 40,
+        width: width/6*5,
+        height: height/10,
         borderColor: 'gray',
         borderWidth: 0.5,
-        marginTop: height / 20,
-        marginLeft: width / 4
+        marginTop: height / 60,
+        marginLeft: width/12
     },
     button: {
         marginTop: height / 25,
         width: width / 4,
-        marginLeft: width / 2 - width / 8 
-    },
-    linkText: {
-        color: 'blue',
-        fontSize: height / 50,
-        marginTop: height / 50,
+        marginLeft: width / 2 - width / 8
     }
 });
 
