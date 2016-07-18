@@ -1,6 +1,6 @@
 'use strict';
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Linking} from 'react-native';
 import NavTabs from '../NavTabs/NavTabs';
 import {Content, List, ListItem, Icon} from 'native-base';
 import style from './LinkPage.style';
@@ -12,19 +12,23 @@ class LinkPage extends React.Component {
         const links = [
             {
                 name: 'Sito Web della Scuola',
-                icon: 'ios-globe'
+                icon: 'ios-globe',
+                url: 'http://www.liceoariostospallanzani-re.gov.it/'
             },
             {
                 name: 'Registro Elettronico',
-                icon: 'ios-book'
+                icon: 'ios-book',
+                url: 'https://spallanzani-re-sito.registroelettronico.com/login/?next=/select-student/'
             },
             {
                 name: 'Quaderno Elettronico',
-                icon: 'md-bookmarks'
+                icon: 'md-bookmarks',
+                url: 'https://ariostospallanzani-re.registroelettronico.com/quaderno/'
             },
             {
                 name: 'Web Mail',
-                icon: 'ios-mail'
+                icon: 'ios-mail',
+                url: 'https://accounts.google.com/ServiceLogin?service=mail&continue=https://mail.google.com/mail/&hl=it#identifier'
             }
         ];
         this.state = { links };
@@ -51,10 +55,10 @@ class LinkPage extends React.Component {
         let values = [];
         this.state.links.map(item => {
             values.push(
-                <ListItem iconLeft key={item.name}>
+                <ListItem iconLeft key={item.name} onPress={() => Linking.openURL(item.url) }>
                     <Icon name={item.icon} />
                     <Text> {item.name}</Text>
-                </ListItem>
+                </ListItem >
             )
         })
         return values;
