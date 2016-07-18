@@ -8,10 +8,8 @@ const style = StyleSheet.create({
     scrollView: {
         height: height / 10 * 8
     },
-    container: {
-        marginTop: height / 25
-    },
     card: {
+        marginTop: height / 25,
         marginBottom: height / 30
     },
     author: {

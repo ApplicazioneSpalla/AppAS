@@ -15,14 +15,12 @@ const style = StyleSheet.create({
         height: height / 4,
         marginTop: height / 8
     },
-    textInput: {
+    textCont: {
         width: width / 2,
-        height: 40,
-        borderColor: 'gray',
-        borderWidth: 0.5,
-        marginTop: height / 20,
-        marginLeft: width / 4,
-        borderRadius: 10
+        marginTop: height / 20
+    },
+    icon: {
+        color: '#384850'
     },
     button: {
         marginTop: height / 25,

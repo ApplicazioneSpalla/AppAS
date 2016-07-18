@@ -20,7 +20,9 @@ class NewsPage extends React.Component {
     content() {
         return (
             <View style={style.scrollView}>
-                <NewsCard navigator={this.props.navigator}/>
+                <Content>
+                    <NewsCard navigator={this.props.navigator}/>
+                </Content>
             </View>)
     }
 

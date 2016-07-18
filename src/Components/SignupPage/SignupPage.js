@@ -1,7 +1,7 @@
 'use strict';
 import React from 'react';
 import {View, Image, TextInput, Navigator} from 'react-native';
-import {Button} from 'native-base';
+import {InputGroup, Input, Icon, Button} from 'native-base';
 import style from './SignupPage.style';
 
 class SignupPage extends React.Component {
@@ -25,32 +25,40 @@ class SignupPage extends React.Component {
                     style={style.image}
                     source={require('../../../assets/icon.png') }
                     />
-                <TextInput
-                    style={style.textInput}
-                    onChangeText={(mail) => this.setState({ mail }) }
-                    value={this.state.mail}
-                    placeholder='mail'
-                    />
-                <TextInput
-                    style={style.textInput}
-                    onChangeText={(username) => this.setState({ username }) }
-                    value={this.state.username}
-                    placeholder=' username'
-                    />
-                <TextInput
-                    style={style.textInput}
-                    onChangeText={(password) => this.setState({ password }) }
-                    value={this.state.password}
-                    placeholder=' password'
-                    secureTextEntry={true}
-                    />
-                <TextInput
-                    style={style.textInput}
-                    onChangeText={(confirmPassword) => this.setState({ confirmPassword }) }
-                    value={this.state.confirmPassword}
-                    placeholder='conferma password'
-                    secureTextEntry={true}
-                    />
+                <InputGroup style={style.textCont} >
+                    <Icon name="ios-mail" style={style.icon}/>
+                    <Input
+                        onChangeText={(mail) => this.setState({ mail }) }
+                        value={this.state.mail}
+                        placeholder="email"
+                        />
+                </InputGroup>
+                <InputGroup style={style.textCont} >
+                    <Icon name="ios-person" style={style.icon}/>
+                    <Input
+                        onChangeText={(username) => this.setState({ username }) }
+                        value={this.state.username}
+                        placeholder="username"
+                        />
+                </InputGroup>
+                <InputGroup style={style.textCont} >
+                    <Icon name="ios-lock" style={style.icon}/>
+                    <Input
+                        onChangeText={(password) => this.setState({ password }) }
+                        value={this.state.password}
+                        placeholder="password"
+                        secureTextEntry={true}
+                        />
+                </InputGroup>
+                <InputGroup style={style.textCont} >
+                    <Icon name="ios-lock" style={style.icon}/>
+                    <Input
+                        onChangeText={(confirmPassword) => this.setState({ confirmPassword }) }
+                        value={this.state.confirmPassword}
+                        placeholder="password di nuovo"
+                        secureTextEntry={true}
+                        />
+                </InputGroup>
                 <Button style={style.button} onPress={this.signup}>Iscriviti</Button>
             </View >
         )
