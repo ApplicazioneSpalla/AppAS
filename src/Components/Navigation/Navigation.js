@@ -1,8 +1,8 @@
 import React from 'react';
 import {Navigator} from 'react-native';
 
-import LoginPage from '../LoginPage/LoginPage';
-import SignupPage from '../SignupPage/SignupPage';
+import LoginPageContainer from '../LoginPage/LoginPageContainer';
+import SignupPageContainer from '../SignupPage/SignupPageContainer';
 import AdminPage from '../AdminPage/AdminPage';
 import ArticlePage from '../ArticlePage/ArticlePage';
 import DirectingPage from '../DirectingPage/DirectingPage';
@@ -31,9 +31,9 @@ class Navigation extends React.Component {
     navigatorRenderScene(route, navigator) {
         switch (route.id) {
             case 'loginPage':
-                return (<LoginPage navigator={navigator} title="loginPage"/>);
+                return (<LoginPageContainer navigator={navigator} title="loginPage"/>);
             case 'signupPage':
-                return (<SignupPage navigator={navigator} title="signupPage"/>);
+                return (<SignupPageContainer navigator={navigator} title="signupPage"/>);
             case 'adminPage':
                 return (<AdminPage navigator={navigator} title="adminPage"/>);
             case 'articlePage':

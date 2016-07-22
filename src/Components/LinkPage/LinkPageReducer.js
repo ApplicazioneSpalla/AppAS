@@ -4,7 +4,7 @@ const initialState = {
 
 const LinkPageReducer = (state = initialState, action = {}) => {
     switch (action.type) {
-        case "LinkClick":
+        case "LINK_CLICK":
             return {
                 lastLinkClick: action.link
             }

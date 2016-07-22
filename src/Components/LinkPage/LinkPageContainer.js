@@ -5,7 +5,8 @@ import LinkClick from './LinkPageActions';
 
 const mapStateToProps = (state) => {
     return {
-        lastLinkClick : state.lastLinkClick
+        lastLinkClick : state.lastLinkClick,
+        currentPage: state.currentPage
     }
 }
 

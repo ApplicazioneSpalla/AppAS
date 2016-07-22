@@ -2,18 +2,11 @@
 import React from 'react';
 import {View, Image, TextInput, Text, Navigator} from 'react-native';
 import {InputGroup, Input, Icon, Button } from 'native-base';
-import style from './LoginPage.style';
+import style from './LoginPageStyle';
 
 class LoginPage extends React.Component {
     constructor() {
         super();
-
-        this.state = {
-            username: '',
-            password: ''
-        }
-
-        this.login = this.login.bind(this);
     }
 
     render() {
@@ -26,30 +19,25 @@ class LoginPage extends React.Component {
                 <InputGroup style={style.textCont} >
                     <Icon name="ios-person" style={style.icon}/>
                     <Input
-                        onChangeText={(username) => this.setState({ username }) }
-                        value={this.state.username}
+                        onChangeText={(username) => this.props.TextChange(username, 'username') }
+                        value={this.props.username}
                         placeholder="username"
                         />
                 </InputGroup>
                 <InputGroup style={style.textCont} >
                     <Icon name="ios-lock" style={style.icon}/>
                     <Input
-                        onChangeText={(password) => this.setState({ password }) }
-                        value={this.state.password}
+                        onChangeText={(password) => this.props.TextChange(password, 'password') }
+                        value={this.props.password}
                         secureTextEntry={true}
                         placeholder="password"
                         />
                 </InputGroup>
-                <Button style={style.button} onPress={this.login}>Accedi</Button>
-                <Text style={style.linkText} onPress={() => this.props.navigator.push({ id: 'signupPage' }) }>Non hai un account?Iscriviti!</Text>
+                <Button style={style.button} onPress={() => this.props.Login(this.props.navigator) }>Accedi</Button>
+                <Text style={style.linkText} onPress={() => this.props.goToSignUp(this.props.navigator)  }>Non hai un account?Iscriviti!</Text>
             </View >
         )
     }
-
-    login() {
-        this.props.navigator.push({ id: 'newsPage' });
-    }
-
 
 }
 

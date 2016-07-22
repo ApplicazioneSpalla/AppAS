@@ -5,7 +5,7 @@ const LinkClick = (link) => {
     Linking.openURL(link.url);
 
     return {
-        type: "LinkClick",
+        type: "LINK_CLICK",
         link: link.name
     }
 

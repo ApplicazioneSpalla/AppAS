@@ -7,15 +7,6 @@ import style from './SignupPage.style';
 class SignupPage extends React.Component {
     constructor() {
         super();
-
-        this.state = {
-            mail: '',
-            username: '',
-            password: '',
-            confirmPassword: ''
-        }
-
-        this.signup = this.signup.bind(this);
     }
 
     render() {
@@ -28,24 +19,24 @@ class SignupPage extends React.Component {
                 <InputGroup style={style.textCont} >
                     <Icon name="ios-mail" style={style.icon}/>
                     <Input
-                        onChangeText={(mail) => this.setState({ mail }) }
-                        value={this.state.mail}
+                        onChangeText={(mail) => this.props.TextChange(mail, 'mail') }
+                        value={this.props.mail}
                         placeholder="email"
                         />
                 </InputGroup>
                 <InputGroup style={style.textCont} >
                     <Icon name="ios-person" style={style.icon}/>
                     <Input
-                        onChangeText={(username) => this.setState({ username }) }
-                        value={this.state.username}
+                        onChangeText={(username) => this.props.TextChange(username, 'username') }
+                        value={this.props.username}
                         placeholder="username"
                         />
                 </InputGroup>
                 <InputGroup style={style.textCont} >
                     <Icon name="ios-lock" style={style.icon}/>
                     <Input
-                        onChangeText={(password) => this.setState({ password }) }
-                        value={this.state.password}
+                        onChangeText={(password) => this.props.TextChange(password, 'password') }
+                        value={this.props.password}
                         placeholder="password"
                         secureTextEntry={true}
                         />
@@ -53,19 +44,15 @@ class SignupPage extends React.Component {
                 <InputGroup style={style.textCont} >
                     <Icon name="ios-lock" style={style.icon}/>
                     <Input
-                        onChangeText={(confirmPassword) => this.setState({ confirmPassword }) }
-                        value={this.state.confirmPassword}
+                        onChangeText={(confirmPassword) => this.props.TextChange(confirmPassword, 'confirmPassword') }
+                        value={this.props.confirmPassword}
                         placeholder="password di nuovo"
                         secureTextEntry={true}
                         />
                 </InputGroup>
-                <Button style={style.button} onPress={this.signup}>Iscriviti</Button>
+                <Button style={style.button} onPress={() => this.props.Signup(this.props.navigator)}>Iscriviti</Button>
             </View >
         )
-    }
-
-    signup() {
-        this.props.navigator.push({ id: 'newsPage' })
     }
 }
 
