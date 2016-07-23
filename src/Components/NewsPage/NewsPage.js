@@ -4,7 +4,7 @@ import {View, ScrollView, Text} from 'react-native';
 import {Content, Card, CardItem} from 'native-base';
 import NavTabs from '../NavTabs/NavTabs';
 import NewsCard from './NewsCard';
-import style from './NewsPage.style';
+import style from './NewsPageStyle';
 
 class NewsPage extends React.Component {
 
@@ -21,7 +21,7 @@ class NewsPage extends React.Component {
         return (
             <View style={style.scrollView}>
                 <Content>
-                    <NewsCard navigator={this.props.navigator}/>
+                    <NewsCard navigator={this.props.navigator} {...this.props}/>
                 </Content>
             </View>)
     }

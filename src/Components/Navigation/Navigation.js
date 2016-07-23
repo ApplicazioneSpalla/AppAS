@@ -6,7 +6,7 @@ import SignupPageContainer from '../SignupPage/SignupPageContainer';
 import AdminPage from '../AdminPage/AdminPage';
 import ArticlePage from '../ArticlePage/ArticlePage';
 import DirectingPage from '../DirectingPage/DirectingPage';
-import NewsPage from '../NewsPage/NewsPage';
+import NewsPageContainer from '../NewsPage/NewsPageContainer';
 import LinkPageContainer from '../LinkPage/LinkPageContainer';
 import ReadArticle from '../ReadArticle/ReadArticle';
 import CommentsPage from '../CommentsPage/CommentsPage';
@@ -41,7 +41,7 @@ class Navigation extends React.Component {
             case 'directingPage':
                 return (<DirectingPage navigator={navigator} title="directingPage"/>);
             case 'newsPage':
-                return (<NewsPage navigator={navigator} title="newsPage"/>);
+                return (<NewsPageContainer navigator={navigator} title="newsPage"/>);
             case 'linkPage':
                 return (<LinkPageContainer navigator={navigator} title="linkPage"/>);
             case 'readArticle':

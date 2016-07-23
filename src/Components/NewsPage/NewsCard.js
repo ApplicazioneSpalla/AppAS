@@ -2,12 +2,13 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import {Content, Card, CardItem, Icon} from 'native-base';
-import style from './NewsPage.style';
+import style from './NewsPageStyle';
 
 class NewsCard extends React.Component {
 
     constructor(props) {
         super(props);
+        console.log(this.props);
     }
 
     render() {
@@ -31,8 +32,8 @@ class NewsCard extends React.Component {
                         <Text style={style.iconText}>Mi piace</Text>
                     </View>
                     <View style={style.button}>
-                        <Icon name="md-chatboxes" style={style.icon} onPress={() => this.props.navigator.replace({ id: 'commentsPage' }) }/>
-                        <Text style={style.iconText} onPress={() => this.props.navigator.replace({ id: 'commentsPage' }) }>Commenta</Text>
+                        <Icon name="md-chatboxes" style={style.icon} onPress={() => this.props.goToComments(this.props.navigator) }/>
+                        <Text style={style.iconText} onPress={() => this.props.goToComments(this.props.navigator) }>Commenta</Text>
                     </View>
                 </CardItem>
             </Card>)
