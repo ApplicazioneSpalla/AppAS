@@ -3,7 +3,7 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import NavTabs from '../NavTabs/NavTabs';
 import ArticleCard from './ArticleCard';
-import style from './ArticlePage.style';
+import style from './ArticlePageStyle';
 
 class ArticlePage extends React.Component {
 
@@ -19,7 +19,7 @@ class ArticlePage extends React.Component {
     content() {
         return (
             <View style={style.container} >
-                <ArticleCard navigator={this.props.navigator}/>
+                <ArticleCard navigator={this.props.navigator} {...this.props}/>
             </View>)
     }
 

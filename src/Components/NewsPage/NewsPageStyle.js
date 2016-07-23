@@ -6,7 +6,7 @@ const height = Dimensions.get('window').height;
 
 const style = StyleSheet.create({
     scrollView: {
-        height: height / 10 * 8
+        height: height / 5 * 4
     },
     card: {
         marginTop: height / 25,

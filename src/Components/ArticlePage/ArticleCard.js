@@ -1,7 +1,7 @@
 import React from 'react';
 import {View,Image,ScrollView,TouchableHighlight} from 'react-native';
 import {Container, Content, Card, CardItem, Text, Icon, Button} from 'native-base';
-import style from './ArticlePage.style';
+import style from './ArticlePageStyle';
 
 class ArticleCard extends React.Component {
     render() {
@@ -28,16 +28,16 @@ class ArticleCard extends React.Component {
 
                         <CardItem style={style.footer}>
                             <View style={style.button}>
-                                <Icon name="md-book" style={style.footerIcon} onPress={() => this.props.navigator.replace({ id : 'readArticle'}) }/>
-                                <Text style={style.iconText} onPress={() => this.props.navigator.replace({ id : 'readArticle'}) }>Leggi</Text>
+                                <Icon name="md-book" style={style.footerIcon} onPress={() => this.props.readArticle(this.props.navigator) }/>
+                                <Text style={style.iconText} onPress={() => this.props.readArticle(this.props.navigator) }>Leggi</Text>
                             </View>
                             <View style={style.button}>
                                 <Icon name="md-thumbs-up" style={style.footerIcon}/>
                                 <Text style={style.iconText}>Mi Piace</Text>
                             </View>
                             <View style={style.button}>
-                                <Icon name="md-chatboxes" style={style.footerIcon}/>
-                                <Text style={style.iconText}>Commenta</Text>
+                                <Icon name="md-chatboxes" style={style.footerIcon} onPress={() => this.props.goToComments(this.props.navigator) }/>
+                                <Text style={style.iconText} onPress={() => this.props.goToComments(this.props.navigator) } >Commenta</Text>
                             </View>
                         </CardItem>
                     </Card>

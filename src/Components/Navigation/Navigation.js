@@ -3,8 +3,8 @@ import {Navigator} from 'react-native';
 
 import LoginPageContainer from '../LoginPage/LoginPageContainer';
 import SignupPageContainer from '../SignupPage/SignupPageContainer';
-import AdminPage from '../AdminPage/AdminPage';
-import ArticlePage from '../ArticlePage/ArticlePage';
+import AdminPageContainer from '../AdminPage/AdminPageContainer';
+import ArticlePageContainer from '../ArticlePage/ArticlePageContainer';
 import DirectingPage from '../DirectingPage/DirectingPage';
 import NewsPageContainer from '../NewsPage/NewsPageContainer';
 import LinkPageContainer from '../LinkPage/LinkPageContainer';
@@ -35,9 +35,9 @@ class Navigation extends React.Component {
             case 'signupPage':
                 return (<SignupPageContainer navigator={navigator} title="signupPage"/>);
             case 'adminPage':
-                return (<AdminPage navigator={navigator} title="adminPage"/>);
+                return (<AdminPageContainer navigator={navigator} title="adminPage"/>);
             case 'articlePage':
-                return (<ArticlePage navigator={navigator} title="articlePage"/>);
+                return (<ArticlePageContainer navigator={navigator} title="articlePage"/>);
             case 'directingPage':
                 return (<DirectingPage navigator={navigator} title="directingPage"/>);
             case 'newsPage':

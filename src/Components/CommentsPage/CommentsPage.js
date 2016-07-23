@@ -1,9 +1,9 @@
 'use strict';
 import React from 'react';
 import {View, Text} from 'react-native';
-import {Container, Content, List, ListItem} from 'native-base';
+import {Container, Content, List, ListItem, InputGroup, Input, Button, Icon} from 'native-base';
 import NavTabs from '../NavTabs/NavTabs';
-import style from './CommentsPage.style';
+import style from './CommentsPageStyle';
 
 class CommentsPage extends React.Component {
 
@@ -19,7 +19,7 @@ class CommentsPage extends React.Component {
     content() {
         return (
             <View>
-                <Content>
+                <Content style={style.container}>
                     <View style={style.commentContainer}>
                         <View style={style.row}>
                             <Text style={style.author}>Nathaniel Clyne</Text>
@@ -28,6 +28,14 @@ class CommentsPage extends React.Component {
                         <Text style={style.date}>20 Settembre alle 10: 55</Text>
                     </View>
                 </Content>
+                <View  style={style.inputRow} >
+                    <InputGroup borderType="regular" style={style.input} >
+                        <Input placeholder="Scrivi il tuo commento qui"/>
+                    </InputGroup>
+                    <Button primary style={style.button}>
+                        <Icon name="md-send" />
+                    </Button>
+                </View>
             </View>)
     }
 

@@ -3,27 +3,28 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import NavTabs from '../NavTabs/NavTabs';
 import {Content, List, ListItem, Icon} from 'native-base';
-import style from './AdminPage.style';
+import style from './AdminPageStyle';
 
 class AdminPage extends React.Component {
 
     constructor(props) {
         super(props);
+        const navigator = this.props.navigator;
         const links = [
             {
                 name: 'Scrivi Comunicazione',
                 icon: 'ios-paper',
-                onPress: () => this.props.navigator.replace({ id: 'createNewsPage' }) 
+                onPress: () => this.props.goToDestination(navigator,'createNewsPage') 
             },
             {
                 name: 'Scrivi Articolo Di Attualità',
                 icon: 'ios-compass',
-                onPress: () => this.props.navigator.replace({ id: 'createArticlePage' }) 
+                onPress: () => this.props.goToDestination(navigator,'createArticlePage')  
             },
             {
                 name: 'Scrivi Articolo di Orientamento',
                 icon: 'ios-notifications',
-                onPress: () => this.props.navigator.replace({ id: 'createArticlePage' }) 
+                onPress: () => this.props.goToDestination(navigator,'createArticlePage')  
             }
         ];
         this.state = { links };

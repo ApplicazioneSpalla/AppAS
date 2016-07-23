@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Modules/RCTUIManager.m \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Modules/RCTUIManager.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTViewManager.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Layout/Layout.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTRootView.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Modules/RCTAccessibilityManager.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTComponentData.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTModuleData.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTModuleMethod.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTBridgeMethod.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTNullability.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTRootShadowView.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTShadowView.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTRootViewInternal.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTScrollableProtocol.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/RCTView.h \
+  /Users/alessandromessori/Desktop/Repositories/AppAS/node_modules/react-native/React/Views/UIView+React.h
