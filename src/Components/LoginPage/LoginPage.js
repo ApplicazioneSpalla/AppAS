@@ -34,7 +34,7 @@ class LoginPage extends React.Component {
                         />
                 </InputGroup>
                 <Button style={style.button} onPress={() => this.props.Login(this.props.navigator) }>Accedi</Button>
-                <Text style={style.linkText} onPress={() => this.props.goToSignUp(this.props.navigator)  }>Non hai un account?Iscriviti!</Text>
+                <Text style={style.linkText} onPress={() => this.props.goToDestination(this.props.navigator,'signupPage')  }>Non hai un account?Iscriviti!</Text>
             </View >
         )
     }

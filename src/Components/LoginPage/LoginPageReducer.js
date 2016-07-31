@@ -21,7 +21,7 @@ const LoginPageReducer = (state = initialState, action = {}) => {
                     password: action.text
                 })
             }
-        case "GOTO_SIGNUP":
+        case "GOTO_DESTINATION":
             return Object.assign(state, {
                 currentPage: action.destination
             })

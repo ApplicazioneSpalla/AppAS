@@ -32,8 +32,8 @@ class NewsCard extends React.Component {
                         <Text style={style.iconText}>Mi piace</Text>
                     </View>
                     <View style={style.button}>
-                        <Icon name="md-chatboxes" style={style.icon} onPress={() => this.props.goToComments(this.props.navigator) }/>
-                        <Text style={style.iconText} onPress={() => this.props.goToComments(this.props.navigator) }>Commenta</Text>
+                        <Icon name="md-chatboxes" style={style.icon} onPress={() => this.props.goToDestination(this.props.navigator,'commentsPage') }/>
+                        <Text style={style.iconText} onPress={() => this.props.goToDestination(this.props.navigator,'commentsPage') }>Commenta</Text>
                     </View>
                 </CardItem>
             </Card>)

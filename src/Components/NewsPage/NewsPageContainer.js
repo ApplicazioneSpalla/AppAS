@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import NewsPage from './NewsPage';
-import Actions from './NewsPageActions';
+import GlobalActions from '../../Services/GlobalActions';
 
 const mapStateToProps = (state) => {
   return {
@@ -11,8 +11,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    goToComments: (navigator) => {
-      dispatch(Actions.GoToComments(navigator));
+    goToDestination: (navigator,source) => {
+      dispatch(GlobalActions.goToDestination(navigator,'commentsPage'));
     }
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Image} from 'react-native';
 import {Container, Content, Text, Icon, Card,CardItem } from 'native-base';
 import NavTabs from '../NavTabs/NavTabs';
-import style from './ReadArticle.style';
+import style from './ReadArticleStyle';
 
 class ReadArticle extends React.Component {
     
@@ -30,7 +30,7 @@ class ReadArticle extends React.Component {
 
                         <CardItem>
                             <Text>#CatchTheCode è l'attività proposta dagli studenti del nostro liceo alle classi delle scuole primarie e secondarie in occasione della EuCodeWeek, iniziativa della Commissione Europea a sostegno della programmazione.</Text>
-                            <Text style={style.linkText}>Leggi i Commenti</Text>
+                            <Text style={style.linkText} onPress={()=> this.props.goToDestination(this.props.navigator,'commentsPage')}>Leggi i Commenti</Text>
                         </CardItem>
                     </Card>
                 </Content>

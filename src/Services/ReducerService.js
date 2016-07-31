@@ -5,6 +5,7 @@ import LinkPageReducer from '../Components/LinkPage/LinkPageReducer';
 import NewsPageReducer from '../Components/NewsPage/NewsPageReducer';
 import ArticlePageReducer from '../Components/ArticlePage/ArticlePageReducer';
 import AdminPageReducer from '../Components/AdminPage/AdminPageReducer';
+import ReadArticleReducer from '../Components/ReadArticle/ReadArticleReducer';
 
 class ReducerService {
 
@@ -15,7 +16,8 @@ class ReducerService {
             LinkPageReducer,
             NewsPageReducer,
             ArticlePageReducer,
-            AdminPageReducer
+            AdminPageReducer,
+            ReadArticleReducer
         })
     }
 }

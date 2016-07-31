@@ -1,13 +1,3 @@
-const TextChange = (text, source) => {
-
-    return {
-        type: "TEXT_CHANGE",
-        text: text,
-        source: source
-    }
-
-}
-
 const Signup = (navigator) => {
 
     navigator.push({ id: 'newsPage' });
@@ -18,6 +8,6 @@ const Signup = (navigator) => {
     }
 }
 
-const Actions = { TextChange, Signup };
+const Actions = { Signup };
 
 export default Actions;

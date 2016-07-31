@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import AdminPage from './AdminPage';
-import Actions from './AdminPageActions';
+import GlobalActions from '../../Services/GlobalActions';
 
 const mapStateToProps = (state) => {
     return {
@@ -12,7 +12,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         goToDestination: (navigator, destination) => {
-            dispatch(Actions.goToDestination(navigator, destination));
+            dispatch(GlobalActions.goToDestination(navigator, destination));
         }
     }
 }

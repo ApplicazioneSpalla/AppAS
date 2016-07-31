@@ -8,7 +8,7 @@ import ArticlePageContainer from '../ArticlePage/ArticlePageContainer';
 import DirectingPage from '../DirectingPage/DirectingPage';
 import NewsPageContainer from '../NewsPage/NewsPageContainer';
 import LinkPageContainer from '../LinkPage/LinkPageContainer';
-import ReadArticle from '../ReadArticle/ReadArticle';
+import ReadArticleContainer from '../ReadArticle/ReadArticleContainer';
 import CommentsPage from '../CommentsPage/CommentsPage';
 import CreateNewsPage from '../CreateNewsPage/CreateNewsPage';
 import CreateArticlePage from '../CreateArticlePage/CreateArticlePage';
@@ -45,7 +45,7 @@ class Navigation extends React.Component {
             case 'linkPage':
                 return (<LinkPageContainer navigator={navigator} title="linkPage"/>);
             case 'readArticle':
-                return (<ReadArticle navigator={navigator} title="readArticle"/>);
+                return (<ReadArticleContainer navigator={navigator} title="readArticle"/>);
             case 'commentsPage':
                 return (<CommentsPage navigator={navigator} title="commentsPage"/>);
             case 'createNewsPage':

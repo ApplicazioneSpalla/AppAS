@@ -11,6 +11,7 @@ class NewsPage extends React.Component {
     constructor(props) {
         super(props);
         this.content = this.content.bind(this);
+        console.log(this.state);
     }
 
     render() {

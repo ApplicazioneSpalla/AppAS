@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ArticlePage from'./ArticlePage';
+import ReadArticle from './ReadArticle';
 import GlobalActions from '../../Services/GlobalActions';
 
 const mapStateToProps = (state) => {
@@ -17,6 +17,6 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const ArticlePageContainer = connect(mapStateToProps, mapDispatchToProps)(ArticlePage);
+const ReadArticleContainer = connect(mapStateToProps, mapDispatchToProps)(ReadArticle);
 
-export default ArticlePageContainer;
+export default ReadArticleContainer;

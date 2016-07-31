@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import LoginPage from './LoginPage';
 import Actions from './LoginPageActions';
+import GlobalActions from '../../Services/GlobalActions';
 
 const mapStateToProps = (state) => {
   return {
@@ -17,10 +18,10 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(Actions.Login(navigator));
     },
     TextChange: (text, source) => {
-      dispatch(Actions.TextChange(text, source));
+      dispatch(GlobalActions.TextChange(text, source));
     },
-    goToSignUp: (navigator) => {
-      dispatch(Actions.goToSignUp(navigator));
+    goToDestination: (navigator,destination) => {
+      dispatch(GlobalActions.goToDestination(navigator,destination));
     }
   }
 }

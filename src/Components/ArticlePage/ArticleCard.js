@@ -28,16 +28,16 @@ class ArticleCard extends React.Component {
 
                         <CardItem style={style.footer}>
                             <View style={style.button}>
-                                <Icon name="md-book" style={style.footerIcon} onPress={() => this.props.readArticle(this.props.navigator) }/>
-                                <Text style={style.iconText} onPress={() => this.props.readArticle(this.props.navigator) }>Leggi</Text>
+                                <Icon name="md-book" style={style.footerIcon} onPress={() => this.props.goToDestination(this.props.navigator,'commentsPage') }/>
+                                <Text style={style.iconText} onPress={() => this.props.goToDestination(this.props.navigator,'commentsPage') }>Leggi</Text>
                             </View>
                             <View style={style.button}>
                                 <Icon name="md-thumbs-up" style={style.footerIcon}/>
                                 <Text style={style.iconText}>Mi Piace</Text>
                             </View>
                             <View style={style.button}>
-                                <Icon name="md-chatboxes" style={style.footerIcon} onPress={() => this.props.goToComments(this.props.navigator) }/>
-                                <Text style={style.iconText} onPress={() => this.props.goToComments(this.props.navigator) } >Commenta</Text>
+                                <Icon name="md-chatboxes" style={style.footerIcon} onPress={() => this.props.goToDestination(this.props.navigator,'commentsPage') }/>
+                                <Text style={style.iconText} onPress={() => this.props.goToDestination(this.props.navigator,'commentsPage') } >Commenta</Text>
                             </View>
                         </CardItem>
                     </Card>

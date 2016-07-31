@@ -1,8 +1,8 @@
 const initialState = {
-    currentPage: 'newsPage',
+    currentPage: 'readArticle',
 };
 
-const NewsPageReducer = (state = initialState, action = {}) => {
+const ReadArticleReducer = (state = initialState, action = {}) => {
     switch (action.type) {
         case "GOTO_DESTINATION":
             return Object.assign(state, {
@@ -13,4 +13,4 @@ const NewsPageReducer = (state = initialState, action = {}) => {
     }
 }
 
-export default NewsPageReducer;
+export default ReadArticleReducer;

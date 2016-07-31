@@ -1,13 +1,3 @@
-const GoToComments = (navigator) => {
-
-    navigator.push({ id: 'commentsPage' });
-
-    return {
-        type: "GOTO_COMMENTS",
-        destination: 'commentsPage'
-    }
-}
-
-const Actions = { GoToComments };
+const Actions = { };
 
 export default Actions;
