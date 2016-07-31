@@ -6,6 +6,9 @@ import NewsPageReducer from '../Components/NewsPage/NewsPageReducer';
 import ArticlePageReducer from '../Components/ArticlePage/ArticlePageReducer';
 import AdminPageReducer from '../Components/AdminPage/AdminPageReducer';
 import ReadArticleReducer from '../Components/ReadArticle/ReadArticleReducer';
+import CommentsPageReducer from '../Components/CommentsPage/CommentsPageReducer';
+import CreateNewsPageReducer from '../Components/CreateNewsPage/CreateNewsPageReducer';
+import CreateArticlePageReducer from '../Components/CreateArticlePage/CreateArticlePageReducer';
 
 class ReducerService {
 
@@ -17,7 +20,10 @@ class ReducerService {
             NewsPageReducer,
             ArticlePageReducer,
             AdminPageReducer,
-            ReadArticleReducer
+            ReadArticleReducer,
+            CommentsPageReducer,
+            CreateNewsPageReducer,
+            CreateArticlePageReducer
         })
     }
 }

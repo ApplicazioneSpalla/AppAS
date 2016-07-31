@@ -30,7 +30,10 @@ class CommentsPage extends React.Component {
                 </Content>
                 <View  style={style.inputRow} >
                     <InputGroup borderType="regular" style={style.input} >
-                        <Input placeholder="Scrivi il tuo commento qui"/>
+                        <Input 
+                        onChangeText={(comment) => this.props.TextChange(comment, 'comment') }
+                        value={this.props.comment}
+                        placeholder="Scrivi il tuo commento qui"/>
                     </InputGroup>
                     <Button primary style={style.button}>
                         <Icon name="md-send" />

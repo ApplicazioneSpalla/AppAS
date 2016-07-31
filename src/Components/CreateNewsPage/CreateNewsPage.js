@@ -3,7 +3,7 @@ import React from 'react';
 import {View, TextInput, Text} from 'react-native';
 import {Button} from 'native-base';
 import NavTabs from '../NavTabs/NavTabs';
-import style from './CreateNewsPage.style';
+import style from './CreateNewsPageStyle';
 
 class CreateNewsPage extends React.Component {
     constructor() {
@@ -23,8 +23,8 @@ class CreateNewsPage extends React.Component {
             <View style={style.container}>
                 <TextInput
                     style={style.textInput}
-                    onChangeText={(newsText) => this.setState({ newsText }) }
-                    value={this.state.newsText}
+                    onChangeText={(news) => this.props.TextChange(news,'news') }
+                    value={this.props.news}
                     placeholder=' Inserisci qui il testo del messaggio'
                     multiline={true}
                     />

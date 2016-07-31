@@ -3,7 +3,7 @@ import React from 'react';
 import {View, TextInput, Text, CameraRoll} from 'react-native';
 import {Button, Icon} from 'native-base';
 import NavTabs from '../NavTabs/NavTabs';
-import style from './CreateArticlePage.style';
+import style from './CreateArticlePageStyle';
 
 class CreateArticlePage extends React.Component {
     constructor() {
@@ -24,15 +24,15 @@ class CreateArticlePage extends React.Component {
             <View style={style.container}>
                 <TextInput
                     style={style.titleInput}
-                    onChangeText={(articleTitle) => this.setState({ articleTitle }) }
-                    value={this.state.articleTitle}
+                    onChangeText={(articleTitle) => this.props.TextChange(articleTitle,'articleTitle') }
+                    value={this.props.articleTitle}
                     placeholder="Titolo dell' articolo"
                     multiline={true}
                     />
                 <TextInput
                     style={style.textInput}
-                    onChangeText={(newsText) => this.setState({ newsText }) }
-                    value={this.state.newsText}
+                    onChangeText={(articleContent) => this.props.TextChange(articleContent,'articleContent') }
+                    value={this.props.articleContent}
                     placeholder="Testo dell' articolo"
                     multiline={true}
                     />

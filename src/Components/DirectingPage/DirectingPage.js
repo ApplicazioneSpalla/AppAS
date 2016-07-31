@@ -2,7 +2,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import NavTabs from '../NavTabs/NavTabs';
-import style from './DirectingPage.style';
+import style from './DirectingPageStyle';
 
 class DirectingPage extends React.Component {
 

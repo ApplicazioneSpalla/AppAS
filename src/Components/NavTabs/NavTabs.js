@@ -5,7 +5,7 @@ import Tabs from 'react-native-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {Header, Title, Button} from 'native-base';
 import Navigation from '../Navigation/Navigation';
-import style from './NavTabs.style';
+import style from './NavTabsStyle';
 
 class NavTabs extends React.Component {
     constructor(props) {
