@@ -1,21 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import AdminPage from './AdminPage';
-import GlobalActions from '../../Services/GlobalActions';
+import Actions from './AdminPageActions';
 
 const mapStateToProps = (state) => {
     return {
         currentPage: state.currentPage
     }
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        goToDestination: (navigator, destination) => {
-            dispatch(GlobalActions.goToDestination(navigator, destination));
+        LinkClick: (navigator, destination) => {
+            dispatch(Actions.LinkClick(navigator,destination));
         }
     }
-}
+};
 
 const AdminPageContainer = connect(mapStateToProps, mapDispatchToProps)(AdminPage);
 

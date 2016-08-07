@@ -28,12 +28,12 @@ class NewsCard extends React.Component {
 
                 <CardItem style={style.footer}>
                     <View style={style.button}>
-                        <Icon name="md-thumbs-up" style={style.icon}/>
-                        <Text style={style.iconText}>Mi piace</Text>
+                        <Icon name="md-thumbs-up" style={style.icon} onPress={this.props.NewsLikeClick}/>
+                        <Text style={style.iconText} onPress={this.props.NewsLikeClick}>Mi piace</Text>
                     </View>
                     <View style={style.button}>
-                        <Icon name="md-chatboxes" style={style.icon} onPress={() => this.props.goToDestination(this.props.navigator,'commentsPage') }/>
-                        <Text style={style.iconText} onPress={() => this.props.goToDestination(this.props.navigator,'commentsPage') }>Commenta</Text>
+                        <Icon name="md-chatboxes" style={style.icon} onPress={() => this.props.NewsCommentClick(this.props.navigator) }/>
+                        <Text style={style.iconText} onPress={() => this.props.NewsCommentClick(this.props.navigator) }>Commenta</Text>
                     </View>
                 </CardItem>
             </Card>)

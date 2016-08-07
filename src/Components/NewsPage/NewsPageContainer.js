@@ -1,20 +1,23 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import NewsPage from './NewsPage';
-import GlobalActions from '../../Services/GlobalActions';
+import Actions from './NewsPageActions';
 
 const mapStateToProps = (state) => {
-  return {
-    currentPage: state.currentPage
-  }
+    return {
+        currentPage: state.currentPage
+    }
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return {
-    goToDestination: (navigator,source) => {
-      dispatch(GlobalActions.goToDestination(navigator,'commentsPage'));
+    return {
+        NewsLikeClick: () => {
+            dispatch(Actions.NewsLikeClick());
+        },
+        NewsCommentClick: (navigator) => {
+            dispatch(Actions.NewsCommentClick(navigator));
+        }
     }
-  }
 };
 
 const NewsPageContainer = connect(mapStateToProps, mapDispatchToProps)(NewsPage);

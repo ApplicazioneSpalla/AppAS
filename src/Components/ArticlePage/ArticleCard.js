@@ -28,16 +28,16 @@ class ArticleCard extends React.Component {
 
                         <CardItem style={style.footer}>
                             <View style={style.button}>
-                                <Icon name="md-book" style={style.footerIcon} onPress={() => this.props.goToDestination(this.props.navigator,'commentsPage') }/>
-                                <Text style={style.iconText} onPress={() => this.props.goToDestination(this.props.navigator,'commentsPage') }>Leggi</Text>
+                                <Icon name="md-book" style={style.footerIcon} onPress={() => this.props.ArticleReadClick(this.props.navigator) }/>
+                                <Text style={style.iconText} onPress={() => this.props.ArticleReadClick(this.props.navigator) }>Leggi</Text>
                             </View>
                             <View style={style.button}>
-                                <Icon name="md-thumbs-up" style={style.footerIcon}/>
-                                <Text style={style.iconText}>Mi Piace</Text>
+                                <Icon name="md-thumbs-up" style={style.footerIcon} onPress={this.props.ArticleLikeClick}/>
+                                <Text style={style.iconText} onPress={this.props.ArticleLikeClick}>Mi Piace</Text>
                             </View>
                             <View style={style.button}>
-                                <Icon name="md-chatboxes" style={style.footerIcon} onPress={() => this.props.goToDestination(this.props.navigator,'commentsPage') }/>
-                                <Text style={style.iconText} onPress={() => this.props.goToDestination(this.props.navigator,'commentsPage') } >Commenta</Text>
+                                <Icon name="md-chatboxes" style={style.footerIcon} onPress={() => this.props.ArticleCommentClick(this.props.navigator) }/>
+                                <Text style={style.iconText} onPress={() => this.props.ArticleCommentClick(this.props.navigator) } >Commenta</Text>
                             </View>
                         </CardItem>
                     </Card>
