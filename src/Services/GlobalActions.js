@@ -1,26 +1,25 @@
 class GlobalActions {
 
-    static TextChange(text, source) {
+    static TextChange(type, text, source) {
 
         return {
-            type: "TEXT_CHANGE",
-            text: text,
-            source: source
+            type,
+            text,
+            source
         }
 
     }
 
-    static goToDestination(navigator, destination) {
+    static goToDestination(type, navigator, destination) {
 
-        navigator.push({ id: destination });
+        navigator.push({id: destination});
 
         return {
-            type: "GOTO_DESTINATION",
-            destination: destination
+            type,
+            destination
         }
     }
-
-
+    
 }
 
 export default GlobalActions;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import LinkPage from './LinkPage';
-import LinkClick from './LinkPageActions';
+import Actions from './LinkPageActions';
 
 const mapStateToProps = (state) => {
     return {
@@ -12,11 +12,11 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    LinkClick: (link) => {
-      dispatch(LinkClick(link));
+    WebLinkClick: (link) => {
+      dispatch(Actions.WebLinkClick(link));
     }
   }
-}
+};
 
 const LinkPageContainer = connect(mapStateToProps,mapDispatchToProps)(LinkPage);
 

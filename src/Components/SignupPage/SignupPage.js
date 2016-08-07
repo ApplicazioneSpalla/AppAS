@@ -2,7 +2,7 @@
 import React from 'react';
 import {View, Image, TextInput, Navigator} from 'react-native';
 import {InputGroup, Input, Icon, Button} from 'native-base';
-import style from './SignupPage.style';
+import style from './SignupPageStyle';
 
 class SignupPage extends React.Component {
     constructor() {
@@ -19,7 +19,7 @@ class SignupPage extends React.Component {
                 <InputGroup style={style.textCont} >
                     <Icon name="ios-mail" style={style.icon}/>
                     <Input
-                        onChangeText={(mail) => this.props.TextChange(mail, 'mail') }
+                        onChangeText={(mail) => this.props.SignupTextChange(mail, 'mail') }
                         value={this.props.mail}
                         placeholder="email"
                         />
@@ -27,7 +27,7 @@ class SignupPage extends React.Component {
                 <InputGroup style={style.textCont} >
                     <Icon name="ios-person" style={style.icon}/>
                     <Input
-                        onChangeText={(username) => this.props.TextChange(username, 'username') }
+                        onChangeText={(username) => this.props.SignupTextChange(username, 'username') }
                         value={this.props.username}
                         placeholder="username"
                         />
@@ -35,7 +35,7 @@ class SignupPage extends React.Component {
                 <InputGroup style={style.textCont} >
                     <Icon name="ios-lock" style={style.icon}/>
                     <Input
-                        onChangeText={(password) => this.props.TextChange(password, 'password') }
+                        onChangeText={(password) => this.props.SignupTextChange(password, 'password') }
                         value={this.props.password}
                         placeholder="password"
                         secureTextEntry={true}
@@ -44,13 +44,13 @@ class SignupPage extends React.Component {
                 <InputGroup style={style.textCont} >
                     <Icon name="ios-lock" style={style.icon}/>
                     <Input
-                        onChangeText={(confirmPassword) => this.props.TextChange(confirmPassword, 'confirmPassword') }
+                        onChangeText={(confirmPassword) => this.props.SignupTextChange(confirmPassword, 'confirmPassword') }
                         value={this.props.confirmPassword}
                         placeholder="password di nuovo"
                         secureTextEntry={true}
                         />
                 </InputGroup>
-                <Button style={style.button} onPress={() => this.props.Signup(this.props.navigator)}>Iscriviti</Button>
+                <Button style={style.button} onPress={() => this.props.SignupBtnClick(this.props.navigator)}>Iscriviti</Button>
             </View >
         )
     }

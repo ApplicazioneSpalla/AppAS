@@ -10,7 +10,7 @@ const style = StyleSheet.create({
 
     container: {
         flex: 1,
-        backgroundColor: '#F5FCFF',
+        backgroundColor: '#F5FCFF'
     },
     welcome: {
         fontSize: 20,

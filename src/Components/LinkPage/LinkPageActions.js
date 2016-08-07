@@ -1,14 +1,20 @@
 import {Linking} from 'react-native';
 
-const LinkClick = (link) => {
-    
+export const ActionTypes = {
+    WEB_LINK_CLICK: "WEB_LINK_CLICK"
+};
+
+const WebLinkClick = (link) => {
+
     Linking.openURL(link.url);
 
     return {
-        type: "LINK_CLICK",
+        type: ActionTypes.WEB_LINK_CLICK,
         link: link.name
     }
 
-}
+};
 
-export default LinkClick;
+const Actions = {WebLinkClick};
+
+export  default  Actions;

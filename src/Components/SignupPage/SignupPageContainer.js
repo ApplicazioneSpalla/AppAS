@@ -2,8 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import SignupPage from './SignupPage';
 import Actions from './SignupPageActions';
-import GlobalActions from '../../Services/GlobalActions';
-
 
 const mapStateToProps = (state) => {
   return {
@@ -13,18 +11,18 @@ const mapStateToProps = (state) => {
     password: state.password,
     confirmPassword: state.confirmPassword
   }
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    TextChange: (text, source) => {
-      dispatch(GlobalActions.TextChange(text, source));
+    SignupTextChange: (text, source) => {
+      dispatch(Actions.SignupTextChange(text,source));
     },
-    Signup: (navigator) => {
-      dispatch(Actions.Signup(navigator));
+    SignupBtnClick: (navigator) => {
+      dispatch(Actions.SignupBtnClick(navigator));
     }
   }
-}
+};
 
 const SignupPageContainer = connect(mapStateToProps, mapDispatchToProps)(SignupPage);
 

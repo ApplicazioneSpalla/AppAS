@@ -1,3 +1,5 @@
+import ActionTypes from './SignupPageActions';
+
 const initialState = {
     currentPage: 'signupPage',
     mail: '',
@@ -8,17 +10,17 @@ const initialState = {
 
 const SignupPageReducer = (state = initialState, action = {}) => {
     switch (action.type) {
-        case "TEXT_CHANGE":
+        case ActionTypes.SIGNUP_TEXT_CHANGE:
             const newState = state;
             newState[action.source] = action.text;
             return newState;
-        case "SIGNUP":
+        case ActionTypes.SIGNUP_BTN_CLICK:
             return Object.assign(state, {
                 currentPage: action.destination
-            })
+            });
         default:
             return state;
     }
-}
+};
 
 export default SignupPageReducer;

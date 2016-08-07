@@ -55,12 +55,12 @@ class LinkPage extends React.Component {
         let values = [];
         this.state.links.map(item => {
             values.push(
-                <ListItem iconLeft key={item.name} onPress={() => this.props.LinkClick(item) }>
+                <ListItem iconLeft key={item.name} onPress={() => this.props.WebLinkClick(item) }>
                     <Icon name={item.icon} />
                     <Text> {item.name}</Text>
                 </ListItem >
             )
-        })
+        });
         return values;
     }
 

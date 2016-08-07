@@ -4,7 +4,6 @@ import {View, Text, TouchableHighlight} from 'react-native';
 import Tabs from 'react-native-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {Header, Title, Button} from 'native-base';
-import Navigation from '../Navigation/Navigation';
 import style from './NavTabsStyle';
 
 class NavTabs extends React.Component {
@@ -56,8 +55,15 @@ class NavTabs extends React.Component {
                     }
                 </Tabs>
                 <Header style={style.header}>
-                    <Text style={style.title}>{this.state.title}</Text>
-                
+                    <Button transparent>
+                        <Icon name="ios-arrow-back" />
+                    </Button>
+
+                    <Title>{this.state.title}</Title>
+
+                    <Button transparent>
+                        <Icon name="ios-log-out" />
+                    </Button>
                 </Header>
                 {this.props.mainComponent}
             </View>

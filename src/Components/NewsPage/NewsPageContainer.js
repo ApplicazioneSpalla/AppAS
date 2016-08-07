@@ -7,7 +7,7 @@ const mapStateToProps = (state) => {
   return {
     currentPage: state.currentPage
   }
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -15,7 +15,7 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(GlobalActions.goToDestination(navigator,'commentsPage'));
     }
   }
-}
+};
 
 const NewsPageContainer = connect(mapStateToProps, mapDispatchToProps)(NewsPage);
 

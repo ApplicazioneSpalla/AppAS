@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import LoginPage from './LoginPage';
 import Actions from './LoginPageActions';
-import GlobalActions from '../../Services/GlobalActions';
 
 const mapStateToProps = (state) => {
   return {
@@ -10,21 +9,21 @@ const mapStateToProps = (state) => {
     username: state.username,
     password: state.password
   }
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    Login: (navigator) => {
-      dispatch(Actions.Login(navigator));
+    LoginBtnClick: (navigator) => {
+      dispatch(Actions.LoginBtnClick(navigator));
     },
-    TextChange: (text, source) => {
-      dispatch(GlobalActions.TextChange(text, source));
+    LoginTextChange: (text, source) => {
+      dispatch(Actions.LoginTextChange(text,source));
     },
-    goToDestination: (navigator,destination) => {
-      dispatch(GlobalActions.goToDestination(navigator,destination));
+    SignupLinkClick: (navigator) => {
+      dispatch(Actions.SignupLinkClick(navigator));
     }
   }
-}
+};
 
 const LoginPageContainer = connect(mapStateToProps, mapDispatchToProps)(LoginPage);
 
