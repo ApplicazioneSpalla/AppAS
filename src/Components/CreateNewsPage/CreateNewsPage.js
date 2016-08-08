@@ -23,12 +23,12 @@ class CreateNewsPage extends React.Component {
             <View style={style.container}>
                 <TextInput
                     style={style.textInput}
-                    onChangeText={(news) => this.props.TextChange(news,'news') }
+                    onChangeText={(news) => this.props.CreateNewsTextChange(news,'news') }
                     value={this.props.news}
                     placeholder=' Inserisci qui il testo del messaggio'
                     multiline={true}
                     />
-                <Button style={style.button}>Invia</Button>
+                <Button style={style.button} onPress={this.props.CreateNewsBtnClick}>Invia</Button>
             </View>
         )
     }

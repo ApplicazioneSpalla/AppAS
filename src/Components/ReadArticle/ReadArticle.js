@@ -30,7 +30,7 @@ class ReadArticle extends React.Component {
 
                         <CardItem>
                             <Text>#CatchTheCode è l'attività proposta dagli studenti del nostro liceo alle classi delle scuole primarie e secondarie in occasione della EuCodeWeek, iniziativa della Commissione Europea a sostegno della programmazione.</Text>
-                            <Text style={style.linkText} onPress={()=> this.props.goToDestination(this.props.navigator,'commentsPage')}>Leggi i Commenti</Text>
+                            <Text style={style.linkText} onPress={()=> this.props.ReadArticleCommentClick(this.props.navigator)}>Leggi i Commenti</Text>
                         </CardItem>
                     </Card>
                 </Content>

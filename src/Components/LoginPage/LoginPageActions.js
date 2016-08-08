@@ -19,7 +19,7 @@ const LoginBtnClick = (navigator) => {
     navigator.push({id: 'newsPage'});
 
     return {
-        type: ActionTypes.LOGIN_TEXT_CHANGE,
+        type: ActionTypes.LOGIN_BTN_CLICK,
         destination: 'newsPage'
     }
 };

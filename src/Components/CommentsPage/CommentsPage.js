@@ -31,11 +31,11 @@ class CommentsPage extends React.Component {
                 <View  style={style.inputRow} >
                     <InputGroup borderType="regular" style={style.input} >
                         <Input 
-                        onChangeText={(comment) => this.props.TextChange(comment, 'comment') }
+                        onChangeText={(comment) => this.props.CommentTextChange(comment, 'comment') }
                         value={this.props.comment}
                         placeholder="Scrivi il tuo commento qui"/>
                     </InputGroup>
-                    <Button primary style={style.button}>
+                    <Button primary style={style.button} onPress={this.props.CommentBtnClick}>
                         <Icon name="md-send" />
                     </Button>
                 </View>

@@ -1,12 +1,14 @@
+import {ActionTypes} from './CreateArticlePageActions';
+
 const initialState = {
     currentPage: 'createArticlePage',
     articleTitle: '',
     articleContent: ''
 };
 
-const LoginPageReducer = (state = initialState, action = {}) => {
+const CreateArticlePageReducer = (state = initialState, action = {}) => {
     switch (action.type) {
-        case "TEXT_CHANGE":
+        case ActionTypes.CREATE_ARTICLE_TEXT_CHANGE:
             if (action.source == 'articleTitle') {
                 return Object.assign(state, {
                     articleTitle: action.text
@@ -17,7 +19,13 @@ const LoginPageReducer = (state = initialState, action = {}) => {
                     articleContent: action.text
                 })
             }
+        case ActionTypes.ADD_PHOTO_BTN_CLICK:
+            return state;
+        case ActionTypes.CREATE_ARTICLE_BTN_CLICK:
+            return state;
         default:
             return state;
     }
-}
+};
+
+export default CreateArticlePageReducer;
