@@ -9,9 +9,15 @@ const style = StyleSheet.create({
         fontSize: height / 40,
         marginLeft: width / 4 * 5
     },
+    titleContainer: {
+        flex: 2,
+        backgroundColor: 'blue'
+    },
     title: {
-        fontSize: height / 30,
-        fontWeight: 'bold'
+        marginTop: height / 30,
+        fontSize: height / 25,
+        fontWeight: 'bold',
+        flexWrap: "wrap"
     },
     image: {
         width: width,

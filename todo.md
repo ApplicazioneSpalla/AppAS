@@ -3,7 +3,6 @@ scrollToRefresh
 rememberMe
 cameraApi
 readArticleLayout
-backButton
-logOut Button
+loading modals
 Api calls
 

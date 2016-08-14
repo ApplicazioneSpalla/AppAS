@@ -33,6 +33,8 @@ const style = StyleSheet.create({
         color: 'white',
         marginTop: height / 150,
         fontSize: height / 40
+    },
+    headerBtn: {
     }
 });
 

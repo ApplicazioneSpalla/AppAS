@@ -1,7 +1,11 @@
 import {ActionTypes} from './NewsPageActions';
+import {ListView} from 'react-native';
+
+let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 
 const initialState = {
     currentPage: 'newsPage',
+    newsList: ds.cloneWithRows(['row1', 'row2'])
 };
 
 const NewsPageReducer = (state = initialState, action = {}) => {
@@ -9,9 +13,10 @@ const NewsPageReducer = (state = initialState, action = {}) => {
         case ActionTypes.NEWS_LIKE_CLICK:
             return state;
         case ActionTypes.NEWS_COMMENT_CLICK:
-            return Object.assign(state, {
+            return {
+                ...state,
                 currentPage: action.destination
-            });
+            };
         default:
             return state;
     }

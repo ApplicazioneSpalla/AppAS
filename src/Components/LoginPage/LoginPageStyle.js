@@ -22,6 +22,10 @@ const style = StyleSheet.create({
     icon: {
         color: '#384850'
     },
+    checkbox: {
+        marginLeft: width / 8,
+        marginTop: height / 50,
+    },
     button: {
         marginTop: height / 25,
         width: width / 4,

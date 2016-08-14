@@ -9,6 +9,7 @@ import style from './NavTabsStyle';
 class NavTabs extends React.Component {
     constructor(props) {
         super(props);
+        let showBackBtn = true;
         const items = [
             {
                 icon: "ios-home-outline",
@@ -31,12 +32,21 @@ class NavTabs extends React.Component {
                 link: 'linkPage'
             },
         ];
-        const activeItem = items[this.props.index].icon;
-        items[this.props.index].icon = activeItem.slice(0, activeItem.length - 8);
+
+        if (this.props.index < 5) {
+            const activeItem = items[this.props.index].icon;
+            items[this.props.index].icon = activeItem.slice(0, activeItem.length - 8);
+            showBackBtn = false;
+        }
+
         this.state = {
             items,
-            title: this.getTitle()
+            title: this.getTitle(),
+            showBackBtn,
+            showSpinner: false
         };
+
+        this.logOut = this.logOut.bind(this);
 
     }
 
@@ -48,21 +58,21 @@ class NavTabs extends React.Component {
                     {
                         this.state.items.map(item => {
                             return (
-                                <TouchableHighlight  key={item.icon} onPress={() => self.props.navigator.replace({ id: item.link }) }>
-                                    <Icon name={item.icon} size={30} style={{ color: 'black' }}/>
+                                <TouchableHighlight key={item.icon}
+                                                    onPress={() => self.props.navigator.replace({id: item.link}) }>
+                                    <Icon name={item.icon} size={30} style={{color: 'black'}}/>
                                 </TouchableHighlight>)
                         })
                     }
                 </Tabs>
+
                 <Header style={style.header}>
-                    <Button transparent>
-                        <Icon name="ios-arrow-back" />
-                    </Button>
+                    {this.renderBackBtn()}
 
                     <Title>{this.state.title}</Title>
 
-                    <Button transparent>
-                        <Icon name="ios-log-out" />
+                    <Button style={style.headerBtn} transparent onPress={this.logOut}>
+                        <Icon name="ios-log-out"/>
                     </Button>
                 </Header>
                 {this.props.mainComponent}
@@ -73,16 +83,41 @@ class NavTabs extends React.Component {
     getTitle() {
         switch (this.props.index) {
             case 0:
-                return 'Sezione Admin'
+                return 'Sezione Admin';
             case 1:
-                return "Attualità"
+                return "Attualità";
             case 2:
-                return 'Giornalino'
+                return 'Giornalino';
             case 3:
-                return "Comunicazioni"
+                return "Comunicazioni";
             case 4:
-                return "Link Utili"
+                return "Link Utili";
+            case 5:
+                return "Commenti";
+            case 6:
+                return "Crea Comunicazione";
+            case 7:
+                return 'Crea Articolo';
+            case 8:
+                return "Leggi Articolo";
         }
+    }
+
+    renderBackBtn() {
+        if (this.state.showBackBtn) {
+            return (<Button transparent onPress={this.props.navigator.jumpBack}>
+                <Icon name="ios-arrow-back"/>
+            </Button>)
+        }
+        else {
+            return (<Button transparent>
+                <Text></Text>
+            </Button>)
+        }
+    }
+
+    logOut() {
+        this.props.navigator.replace({id: 'loginPage'});
     }
 }
 

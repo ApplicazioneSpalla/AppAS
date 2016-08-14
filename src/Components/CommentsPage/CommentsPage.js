@@ -13,7 +13,7 @@ class CommentsPage extends React.Component {
     }
 
     render() {
-        return (<NavTabs mainComponent={this.content() }  navigator={this.props.navigator} index={3}/>)
+        return (<NavTabs mainComponent={this.content() }  navigator={this.props.navigator} index={5}/>)
     }
 
     content() {

@@ -2,6 +2,7 @@
 import React from 'react';
 import {View, Image, TextInput, Text, Navigator} from 'react-native';
 import {InputGroup, Input, Icon, Button} from 'native-base';
+import CheckBox from 'react-native-checkbox';
 import style from './LoginPageStyle';
 
 class LoginPage extends React.Component {
@@ -33,6 +34,14 @@ class LoginPage extends React.Component {
                         placeholder="password"
                     />
                 </InputGroup>
+                <CheckBox
+                    containerStyle={style.checkbox}
+                    label='Ricordami'
+                    onChange={(checked)=>{
+                        this.props.RememberMeChange();
+                        console.log(checked);
+                    }}
+                />
                 <Button style={style.button}
                         onPress={() => this.props.LoginBtnClick(this.props.navigator) }>Accedi</Button>
                 <Text style={style.linkText} onPress={() => this.props.SignupLinkClick(this.props.navigator) }>Non hai
